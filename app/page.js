@@ -1,6 +1,7 @@
 
 import Hero from "./components/home/Hero";
 import Services from "./components/home/Services";
+import RequestQuote from "./components/home/RequestQuote";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
+        <RequestQuote />
       </main>
     </>
   );
