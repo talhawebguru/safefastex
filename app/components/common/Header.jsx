@@ -55,19 +55,7 @@ const Header = () => {
         <Container>
           <div className="flex items-center justify-between py-4 lg:py-5">
             {/* Left Section - Mobile Menu Button (visible on small screens only) */}
-            <div className="flex items-center lg:hidden">
-              {/* Sidebar trigger for mobile - hidden on larger screens */}
-              <button
-                className="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200 mr-2"
-                aria-label="Open Sidebar"
-              >
-                <div className="w-6 h-6 flex flex-col justify-center space-y-1">
-                  <span className="block w-6 h-0.5 bg-gray-600"></span>
-                  <span className="block w-6 h-0.5 bg-gray-600"></span>
-                  <span className="block w-6 h-0.5 bg-gray-600"></span>
-                </div>
-              </button>
-            </div>
+    
 
             {/* Logo */}
             <div className="flex-shrink-0 pr-3 lg:pr-6">
