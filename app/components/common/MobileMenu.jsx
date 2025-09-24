@@ -6,82 +6,20 @@ import { motion, AnimatePresence } from 'motion/react'
 import { FiX, FiChevronDown } from 'react-icons/fi'
 
 const mobileNavigationItems = [
-  {
-    label: 'Home',
-    href: '/',
-    hasSubmenu: true,
-    submenuItems: [
-      { label: 'Transportation (Rounded)', href: '/' },
-      { label: 'Transportation (Angular)', href: '/transportation-angular' },
-      { label: 'Logistic (Rounded)', href: '/logistic-rounded' },
-      { label: 'Logistic (Angular)', href: '/logistic-angular' },
-      { label: 'Ship Freight (Rounded)', href: '/ship-freight-rounded' },
-      { label: 'Ship Freight (Angular)', href: '/ship-freight-angular' },
-      { label: 'Air Freight (Rounded)', href: '/air-freight-rounded' },
-      { label: 'Air Freight (Angular)', href: '/air-freight-angular' },
-      { label: 'Railway Freight (Rounded)', href: '/railway-freight-rounded' },
-      { label: 'Railway Freight (Angular)', href: '/railway-freight-angular' },
-      { label: 'Truck Freight (Rounded)', href: '/truck-freight-rounded' },
-      { label: 'Truck Freight (Angular)', href: '/truck-freight-angular' },
-      { label: 'Intro (Rounded)', href: '/intro-rounded' },
-      { label: 'Intro (Angular)', href: '/intro-angular' },
-    ],
-  },
-  {
-    label: 'Pages',
-    href: '/pages',
-    hasSubmenu: true,
-    submenuItems: [
-      { label: 'About Us', href: '/about-us' },
-      { label: 'Team', href: '/team' },
-      { label: 'Career', href: '/career' },
-      { label: 'Galleries', href: '/gallery' },
-      { label: 'Our Garage', href: '/garage' },
-      { label: 'Request Quote', href: '/quote' },
-      { label: 'Calculator', href: '/calculator' },
-      { label: 'Certifications', href: '/certifications' },
-      { label: 'Pricing Plans', href: '/pricing' },
-      { label: 'FAQ', href: '/faq' },
-      { label: 'Typography', href: '/typography' },
-      { label: 'Page 404', href: '/404' },
-    ],
-  },
+  { label: 'Home', href: '/', hasSubmenu: false },
+  { label: 'About', href: '/about', hasSubmenu: false },
   {
     label: 'Services',
     href: '/services',
     hasSubmenu: true,
     submenuItems: [
-      { label: 'Services', href: '/services' },
-      { label: 'Single Service', href: '/services/service' },
+      { label: 'Road Freight', href: '/services/road-freight' },
+      { label: 'Ship Freight', href: '/services/ship-freight' },
+      { label: 'Air Freight', href: '/services/air-freight' },
     ],
   },
-  {
-    label: 'Shop',
-    href: '/shop',
-    hasSubmenu: true,
-    submenuItems: [
-      { label: 'Shop', href: '/shop' },
-      { label: 'Single Product', href: '/shop/product' },
-      { label: 'Cart', href: '/cart' },
-      { label: 'Checkout', href: '/checkout' },
-      { label: 'My account', href: '/my-account' },
-    ],
-  },
-  {
-    label: 'Blog',
-    href: '/blog',
-    hasSubmenu: true,
-    submenuItems: [
-      { label: 'Blog Classic', href: '/blog/classic' },
-      { label: 'Blog Grid', href: '/blog/grid' },
-      { label: 'Single Post', href: '/blog/post' },
-    ],
-  },
-  {
-    label: 'Contacts',
-    href: '/contacts',
-    hasSubmenu: false,
-  },
+  { label: 'Blog', href: '/blog', hasSubmenu: false },
+  { label: 'Contacts', href: '/contacts', hasSubmenu: false },
 ]
 
 const MobileMenu = ({ isOpen, onClose }) => {
