@@ -224,7 +224,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-x-4 gap-y-2 mb-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-x-4 gap-y-0.5 mb-8">
               <motion.span
                 variants={wordVariants}
                 className="text-white text-5xl sm:text-6xl lg:text-7xl font-medium font-['Space_Grotesk'] uppercase leading-tight"
@@ -238,7 +238,7 @@ const Footer = () => {
                 on time
               </motion.span>
             </div>
-            <motion.div variants={wordVariants} className="mb-8">
+            <motion.div variants={wordVariants}>
               <span className="text-white text-5xl sm:text-6xl lg:text-7xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
                 with no hassle.
               </span>

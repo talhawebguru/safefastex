@@ -18,7 +18,6 @@ export default function Home() {
         <RequestQuote />
         <Blogs />
       </main>
-      <Footer />
     </>
   );
 }
