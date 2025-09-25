@@ -88,11 +88,11 @@ const GetInTouch = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 0.4, ease: "easeOut", delay: 0.4 }}
-          className=" mt-10"
+          className="mt-10"
         >
-          <Link
-            href="/services"
-            className="group relative inline-flex items-center rounded-2xl border border-gray-900 text-gray-900 pl-6 pr-1 py-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500/60"
+          <button
+            type="submit"
+            className="group relative inline-flex items-center rounded-2xl border border-gray-900 text-gray-900 pl-6 pr-1 py-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500/60 hover:cursor-pointer"
           >
             <span
               aria-hidden
@@ -104,7 +104,7 @@ const GetInTouch = () => {
             <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-amber-400 text-gray-900">
               <FiArrowUpRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]" />
             </span>
-          </Link>
+          </button>
         </motion.div>
       </form>
     </motion.div>
