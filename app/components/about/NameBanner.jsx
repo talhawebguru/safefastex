@@ -4,7 +4,14 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import Container from "../common/Container";
 
-const NameBanner = () => {
+const NameBanner = ({ 
+  title = "About Logico",
+  backgroundImage = "/images/nameBanner.jpg",
+  breadcrumbs = [
+    { label: "Home", href: "/" },
+    { label: "About Logico", href: null }
+  ]
+}) => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -35,13 +42,14 @@ const NameBanner = () => {
   };
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24">
+    <section className="py-8 sm:py-12 lg:py-16 xl:py-20 overflow-x-hidden">
       <Container>
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="relative w-full h-[400px] sm:h-[500px] lg:h-[554px] bg-[url('/images/nameBanner.jpg')] bg-cover bg-center bg-no-repeat rounded-3xl overflow-hidden"
+          className="relative w-full h-[400px] sm:h-[500px] lg:h-[554px] bg-cover bg-center bg-no-repeat rounded-3xl overflow-hidden"
+          style={{ backgroundImage: `url('${backgroundImage}')` }}
         >
           <div className="w-full h-full ">
             {/* Overlay */}
@@ -52,7 +60,7 @@ const NameBanner = () => {
                   variants={titleVariants}
                   className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium font-['Space_Grotesk'] uppercase leading-tight lg:leading-[96px] max-w-[600px]"
                 >
-                  About Logico
+                  {title}
                 </motion.h1>
               </div>
 
@@ -62,14 +70,23 @@ const NameBanner = () => {
                 <motion.div variants={itemVariants}>
                   <div className="bg-white rounded-2xl px-6 py-4 sm:px-8 sm:py-5 shadow-lg">
                     <nav className="flex items-center space-x-2 text-sm font-normal font-['Manrope'] leading-tight">
-                      <Link
-                        href="/"
-                        className="text-zinc-800 hover:text-zinc-600 transition-colors border-b border-zinc-800 hover:border-zinc-600"
-                      >
-                        Home
-                      </Link>
-                      <span className="text-zinc-800">/</span>
-                      <span className="text-zinc-800">About Logico</span>
+                      {breadcrumbs.map((breadcrumb, index) => (
+                        <span key={index} className="flex items-center space-x-2">
+                          {breadcrumb.href ? (
+                            <Link
+                              href={breadcrumb.href}
+                              className="text-zinc-800 hover:text-zinc-600 transition-colors border-b border-zinc-800 hover:border-zinc-600"
+                            >
+                              {breadcrumb.label}
+                            </Link>
+                          ) : (
+                            <span className="text-zinc-800">{breadcrumb.label}</span>
+                          )}
+                          {index < breadcrumbs.length - 1 && (
+                            <span className="text-zinc-800">/</span>
+                          )}
+                        </span>
+                      ))}
                     </nav>
                   </div>
                 </motion.div>

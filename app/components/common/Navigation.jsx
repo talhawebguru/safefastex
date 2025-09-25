@@ -19,7 +19,7 @@ const navigationItems = [
     ],
   },
   { label: 'Blog', href: '/blog', hasDropdown: false },
-  { label: 'Contacts', href: '/contacts', hasDropdown: false },
+  { label: 'Contact', href: '/contact', hasDropdown: false },
 ]
 
 const Navigation = () => {

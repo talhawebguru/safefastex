@@ -75,7 +75,7 @@ const About = () => {
   }, [isInView, count]);
 
   return (
-    <section className="py-20 sm:py-24 lg:py-32 xl:py-40">
+    <section className="py-8 sm:py-12 lg:py-16 xl:py-20 overflow-x-hidden">
       <Container>
         <motion.div
           variants={containerVariants}

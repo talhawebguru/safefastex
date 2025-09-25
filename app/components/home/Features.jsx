@@ -73,7 +73,7 @@ const Features = () => {
   };
 
   return (
-    <section className="py-8 sm:py-12 lg:py-16 xl:py-20">
+    <section className="py-8 sm:py-12 lg:py-16 xl:py-20 overflow-x-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
         {/* Left Side - Image */}
         <motion.div

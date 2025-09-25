@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <section className="py-16 lg:py-24 relative">
+    <section className="py-8 sm:py-12 lg:py-16 xl:py-20 overflow-x-hidden relative">
       {/* Dotted map background pattern */}
       <div 
         className="absolute inset-0 opacity-10"

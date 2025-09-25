@@ -72,7 +72,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20">
+    <section className="py-8 sm:py-12 lg:py-16 xl:py-20 overflow-x-hidden">
       <Container>
         <motion.div
           variants={itemVariants}

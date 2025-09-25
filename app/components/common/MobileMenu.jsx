@@ -19,7 +19,7 @@ const mobileNavigationItems = [
     ],
   },
   { label: 'Blog', href: '/blog', hasSubmenu: false },
-  { label: 'Contacts', href: '/contacts', hasSubmenu: false },
+  { label: 'Contact', href: '/contact', hasSubmenu: false },
 ]
 
 const MobileMenu = ({ isOpen, onClose }) => {

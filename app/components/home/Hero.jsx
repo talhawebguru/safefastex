@@ -7,7 +7,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Hero = () => {
   return (
-    <section className="pt-6 lg:pt-8">
+    <section className="pt-4 lg:pt-8 overflow-x-hidden">
       <Container>
         <div className="relative overflow-hidden rounded-[28px] lg:rounded-[32px] min-h-[520px] lg:min-h-[640px] 2xl:min-h-[720px]">
           {/* Background video */}

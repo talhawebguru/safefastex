@@ -46,7 +46,7 @@ const RequestQuote = () => {
 
   return (
     <section
-      className="relative min-h-screen bg-cover bg-center bg-no-repeat"
+      className="relative min-h-screen bg-cover bg-center bg-no-repeat overflow-x-hidden"
       style={{
         backgroundImage: `url('/images/request-a-quote-bg.jpg')`,
       }}

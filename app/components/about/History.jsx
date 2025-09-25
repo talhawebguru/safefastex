@@ -69,7 +69,7 @@ const History = () => {
   };
 
   return (
-    <section className="py-16 sm:py-20 lg:py-28 xl:py-32 overflow-hidden">
+    <section className="py-8 sm:py-12 lg:py-16 xl:py-20 overflow-hidden">
       <Container>
         <motion.div
           variants={containerVariants}
