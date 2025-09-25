@@ -4,6 +4,7 @@ import Services from "./components/home/Services";
 import Features from "./components/home/Features";
 import RequestQuote from "./components/home/RequestQuote";
 import Footer from "./components/common/Footer";
+import Blogs from "./components/home/Blogs";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Services />
         <Features />
         <RequestQuote />
+        <Blogs />
       </main>
       <Footer />
     </>

@@ -5,6 +5,7 @@ import Container from "../common/Container";
 import { FiArrowUpRight } from "react-icons/fi";
 import Image from "next/image";
 import FeatureImage from "@/public/images/features.png"; // Replace with your image path
+import Link from "next/link";
 
 const Features = () => {
   const [activeFeature, setActiveFeature] = useState(0); // First feature expanded by default
@@ -72,129 +73,160 @@ const Features = () => {
   };
 
   return (
-    <section className="py-16 lg:py-20 container">
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
-      >
+    <section className="py-8 sm:py-12 lg:py-16 xl:py-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
         {/* Left Side - Image */}
-        <motion.div variants={itemVariants} className="order-2 lg:order-1">
-          <Image src={FeatureImage} alt="Features" className="w-full h-auto" />
+        <motion.div
+          variants={itemVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="order-2 lg:order-1 w-full"
+        >
+          <div className="w-full h-full">
+            <Image
+              src={FeatureImage}
+              alt="Features"
+              className="w-full h-full object-cover"
+              priority
+            />
+          </div>
         </motion.div>
 
         {/* Right Side - Content */}
-        <div className="order-1 lg:order-2 space-y-8">
-          {/* Features Label */}
-          <motion.div
-            variants={itemVariants}
-            className="text-neutral-900 text-sm font-medium font-['Manrope'] leading-loose"
-          >
-            / features /
-          </motion.div>
-
-          {/* Hero Text */}
-          <motion.div variants={containerVariants} className="space-y-2">
-            <motion.div
-              variants={wordVariants}
-              className="flex flex-wrap items-center gap-x-4 gap-y-2"
-            >
-              <span className="text-neutral-900 text-4xl sm:text-5xl lg:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                Unusual
-              </span>
-              <span className="text-neutral-900 text-4xl sm:text-5xl lg:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                things
-              </span>
-              <span className="text-neutral-900 text-4xl sm:text-5xl lg:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                we
-              </span>
-            </motion.div>
-            <motion.div
-              variants={wordVariants}
-              className="flex flex-wrap items-center gap-x-4 gap-y-2"
-            >
-              <span className="text-neutral-900 text-4xl sm:text-5xl lg:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                do
-              </span>
-              <span className="text-neutral-900 text-4xl sm:text-5xl lg:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                work
-              </span>
-            </motion.div>
-            <motion.div variants={wordVariants}>
-              <span className="text-neutral-900 text-4xl sm:text-5xl lg:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                efficiency
-              </span>
-            </motion.div>
-          </motion.div>
-
-          {/* Features List */}
-          <motion.div variants={containerVariants} className="space-y-0">
-            {features.map((feature, index) => (
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="order-1 lg:order-2"
+        >
+          <Container>
+            <div className="space-y-6 sm:space-y-8 py-8 sm:py-12 lg:py-16">
+              {/* Features Label */}
               <motion.div
-                key={feature.id}
                 variants={itemVariants}
-                className={`border-t border-neutral-900 ${
-                  index === features.length - 1 ? "border-b" : ""
-                }`}
+                className="text-neutral-900 text-xs sm:text-sm font-medium font-['Manrope'] leading-loose"
               >
-                <button
-                  onClick={() =>
-                    setActiveFeature(activeFeature === index ? -1 : index)
-                  }
-                  className="w-full py-4 flex items-center justify-between text-left hover:bg-gray-50/50 transition-colors"
-                >
-                  <span className="text-neutral-900 text-lg sm:text-xl font-semibold font-['Manrope'] leading-loose">
-                    {feature.title}
-                  </span>
-                  <div className="flex-shrink-0 ml-4">
-                    <div
-                      className={`w-3.5 h-3.5 transition-colors ${
-                        activeFeature === index
-                          ? "bg-amber-400"
-                          : "bg-neutral-900"
-                      }`}
-                    />
-                  </div>
-                </button>
+                / features /
+              </motion.div>
 
+              {/* Hero Text */}
+              <motion.div
+                variants={containerVariants}
+                className="space-y-1 sm:space-y-2"
+              >
                 <motion.div
-                  initial={false}
-                  animate={{
-                    height: activeFeature === index ? "auto" : 0,
-                    opacity: activeFeature === index ? 1 : 0,
-                  }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="overflow-hidden"
+                  variants={wordVariants}
+                  className="flex flex-wrap items-center gap-x-2 sm:gap-x-4 gap-y-1 sm:gap-y-2"
                 >
-                  <div className="pb-6">
-                    <p className="text-zinc-800 text-base sm:text-lg font-normal font-['Manrope'] leading-loose max-w-md">
-                      {feature.description}
-                    </p>
-                  </div>
+                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
+                    Unusual
+                  </span>
+                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
+                    things
+                  </span>
+                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
+                    we
+                  </span>
+                </motion.div>
+                <motion.div
+                  variants={wordVariants}
+                  className="flex flex-wrap items-center gap-x-2 sm:gap-x-4 gap-y-1 sm:gap-y-2"
+                >
+                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
+                    do
+                  </span>
+                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
+                    work
+                  </span>
+                </motion.div>
+                <motion.div variants={wordVariants}>
+                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
+                    efficiency
+                  </span>
                 </motion.div>
               </motion.div>
-            ))}
-          </motion.div>
 
-          {/* Explore More Button */}
-          <motion.div variants={itemVariants} className="pt-4">
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="group relative w-48 h-12 bg-gradient-to-r from-zinc-800/0 to-zinc-800 rounded-[10px] border border-zinc-800 overflow-hidden transition-all hover:from-zinc-700/0 hover:to-zinc-700"
-            >
-              <span className="absolute left-6 top-1/2 -translate-y-1/2 text-zinc-800 text-sm font-semibold font-['Manrope'] leading-tight tracking-tight">
-                Explore more
-              </span>
-              <div className="absolute right-1 top-1 w-10 h-10 bg-zinc-800 rounded-[8px] flex items-center justify-center group-hover:bg-zinc-700 transition-colors">
-                <FiArrowUpRight className="w-4 h-4 text-white" />
-              </div>
-            </motion.button>
-          </motion.div>
-        </div>
-      </motion.div>
+              {/* Features List */}
+              <motion.div variants={containerVariants} className="space-y-0">
+                {features.map((feature, index) => (
+                  <motion.div
+                    key={feature.id}
+                    variants={itemVariants}
+                    className={`border-t border-neutral-900 ${
+                      index === features.length - 1 ? "border-b" : ""
+                    }`}
+                  >
+                    <button
+                      onClick={() =>
+                        setActiveFeature(activeFeature === index ? -1 : index)
+                      }
+                      className="w-full py-3 sm:py-4 flex items-center justify-between text-left hover:bg-gray-50/50 transition-colors"
+                    >
+                      <span className="text-neutral-900 text-base sm:text-lg lg:text-xl font-semibold font-['Manrope'] leading-loose pr-4">
+                        {feature.title}
+                      </span>
+                      <div className="flex-shrink-0">
+                        <div
+                          className={`w-3 h-3 sm:w-3.5 sm:h-3.5 transition-colors ${
+                            activeFeature === index
+                              ? "bg-amber-400"
+                              : "bg-neutral-900"
+                          }`}
+                        />
+                      </div>
+                    </button>
+
+                    <motion.div
+                      initial={false}
+                      animate={{
+                        height: activeFeature === index ? "auto" : 0,
+                        opacity: activeFeature === index ? 1 : 0,
+                      }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <div className="pb-4 sm:pb-6">
+                        <p className="text-zinc-800 text-sm sm:text-base lg:text-lg font-normal font-['Manrope'] leading-relaxed sm:leading-loose">
+                          {feature.description}
+                        </p>
+                      </div>
+                    </motion.div>
+                  </motion.div>
+                ))}
+              </motion.div>
+
+              {/* Explore More Button */}
+              <motion.div variants={itemVariants} className="pt-2 sm:pt-4">
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
+                  className="hidden lg:block"
+                >
+                  <Link
+                    href="/services"
+                    className="group relative inline-flex items-center rounded-2xl border border-gray-900 text-gray-900 pl-6 pr-1 py-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500/60"
+                  >
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute inset-y-0 left-0 w-0 bg-gray-900 transition-[width] duration-300 ease-out group-hover:w-full rounded-2xl"
+                    />
+                    <span className="relative z-10 font-semibold group-hover:text-white">
+                      Explore More
+                    </span>
+                    <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-amber-400 text-gray-900">
+                      <FiArrowUpRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]" />
+                    </span>
+                  </Link>
+                </motion.div>
+              </motion.div>
+            </div>
+          </Container>
+        </motion.div>
+      </div>
     </section>
   );
 };
