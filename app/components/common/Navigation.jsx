@@ -16,6 +16,7 @@ const navigationItems = [
       { label: 'Road Freight', href: '/services/road-freight' },
       { label: 'Ship Freight', href: '/services/ship-freight' },
       { label: 'Air Freight', href: '/services/air-freight' },
+      { label: 'Train Freight', href: '/services/train-freight' },
     ],
   },
   { label: 'Blog', href: '/blog', hasDropdown: false },
