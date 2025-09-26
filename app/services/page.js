@@ -1,14 +1,27 @@
-import Container from "../components/common/Container";
+import React from "react";
+import NameBanner from "../components/about/NameBanner";
+import Services from "../components/home/Services";
+import Features from "../components/home/Features";
+import RequestQuote from "../components/home/RequestQuote";
 
-export default function ServicesPage() {
+const page = () => {
+  // Define breadcrumbs for services page
+  const breadcrumbs = [{ label: "Home", href: "/" }, { label: "Services" }];
+
   return (
-    <section className="py-10 lg:py-16">
-      <Container>
-        <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900">All Services</h1>
-        <p className="mt-3 max-w-2xl text-gray-600">
-          Explore our transportation services. Select a category to learn more.
-        </p>
-      </Container>
-    </section>
+    <>
+      <main>
+        <NameBanner
+          title="/ Services /"
+          backgroundImage="/images/nameBanner.jpg"
+          breadcrumbs={breadcrumbs}
+        />
+        <Services />
+        <Features />
+        <RequestQuote />
+      </main>
+    </>
   );
-}
+};
+
+export default page;
