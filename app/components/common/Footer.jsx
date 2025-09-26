@@ -224,7 +224,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-x-4 gap-y-0.5 mb-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-x-4 gap-y-0.5">
               <motion.span
                 variants={wordVariants}
                 className="text-white text-5xl sm:text-6xl lg:text-7xl font-medium font-['Space_Grotesk'] uppercase leading-tight"
@@ -285,12 +285,12 @@ const Footer = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12"
           >
             {/* Logo and Since */}
-            <motion.div variants={itemVariants} className="space-y-6">
+            <motion.div variants={itemVariants} className="lg:col-span-2 space-y-6">
               {/* Logo placeholder - replace with actual logo */}
-              <Image src={Logo} alt="Logico" className=" h-auto" />
+              <Image src={Logo} alt="Logico" className="w-[300px]  h-auto" />
 
               {/* Social Icons */}
               <div className="flex items-center gap-6">

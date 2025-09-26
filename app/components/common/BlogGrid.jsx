@@ -242,61 +242,62 @@ const BlogGrid = ({
             className={`grid ${gridCols} ${spacing}`}
           >
             {displayedPosts.map((post, index) => (
-              <motion.article
-                key={post.id}
-                variants={cardVariants}
-                className="group cursor-pointer"
-              >
-                <div className="space-y-6 lg:space-y-8 px-0 xl:px-5 max-w-[460px] mx-auto xl:mx-0">
-                  {/* Date with border */}
-                  <div className="relative">
-                    <div className="border-b-2 border-neutral-900 pb-2 w-full max-w-sm">
-                      <span className="text-neutral-400 text-sm font-semibold font-['Manrope'] leading-loose tracking-tight">
-                        {post.date}
-                      </span>
+              <Link href="/blog/innovation-supply-chain-management" key={post.id}>
+                <motion.article
+                  variants={cardVariants}
+                  className="group cursor-pointer"
+                >
+                  <div className="space-y-6 lg:space-y-8 px-0 xl:px-5 max-w-[460px] mx-auto xl:mx-0">
+                    {/* Date with border */}
+                    <div className="relative">
+                      <div className="border-b-2 border-neutral-900 pb-2 w-full max-w-sm">
+                        <span className="text-neutral-400 text-sm font-semibold font-['Manrope'] leading-loose tracking-tight">
+                          {post.date}
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Title */}
-                  <div className="pt-4">
-                    <h3 className="text-zinc-800 text-xl sm:text-2xl lg:text-3xl font-semibold font-['Manrope'] leading-8 sm:leading-9 group-hover:text-neutral-600 transition-colors">
-                      {post.title}
-                    </h3>
-                  </div>
+                    {/* Title */}
+                    <div className="pt-4">
+                      <h3 className="text-zinc-800 text-xl sm:text-2xl lg:text-3xl font-semibold font-['Manrope'] leading-8 sm:leading-9 group-hover:text-neutral-600 transition-colors">
+                        {post.title}
+                      </h3>
+                    </div>
 
-                  {/* Description */}
-                  <div className="pt-2">
-                    <p className="text-zinc-800 text-base sm:text-lg font-normal font-['Manrope'] leading-loose">
-                      {post.description}
-                    </p>
-                  </div>
+                    {/* Description */}
+                    <div className="pt-2">
+                      <p className="text-zinc-800 text-base sm:text-lg font-normal font-['Manrope'] leading-loose">
+                        {post.description}
+                      </p>
+                    </div>
 
-                  {/* Image with Category Tag */}
-                  <div className="relative pt-4">
-                    <div className="relative w-full aspect-[420/467] rounded-3xl overflow-hidden bg-gray-200">
-                      {/* Blog Image */}
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="transition-transform duration-300 group-hover:scale-105"
-                      />
+                    {/* Image with Category Tag */}
+                    <div className="relative pt-4">
+                      <div className="relative w-full aspect-[420/467] rounded-3xl overflow-hidden bg-gray-200">
+                        {/* Blog Image */}
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          layout="fill"
+                          objectFit="cover"
+                          className="transition-transform duration-300 group-hover:scale-105"
+                        />
 
-                      {/* Category Tag */}
-                      <div className="absolute top-4 left-4">
-                        <div
-                          className={`${post.categoryColor} rounded-2xl px-6 py-2.5 overflow-hidden flex justify-center items-center`}
-                        >
-                          <span className="text-zinc-800 text-xs font-medium font-['Manrope'] leading-tight">
-                            {post.category}
-                          </span>
+                        {/* Category Tag */}
+                        <div className="absolute top-4 left-4">
+                          <div
+                            className={`${post.categoryColor} rounded-2xl px-6 py-2.5 overflow-hidden flex justify-center items-center`}
+                          >
+                            <span className="text-zinc-800 text-xs font-medium font-['Manrope'] leading-tight">
+                              {post.category}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </motion.article>
+                </motion.article>
+              </Link>
             ))}
           </motion.div>
 
