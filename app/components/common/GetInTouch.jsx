@@ -34,7 +34,7 @@ const GetInTouch = () => {
       transition={{ duration: 0.6 }}
       className="bg-white rounded-3xl p-6 sm:p-8 lg:p-12 max-w-[670px] w-full"
     >
-      <h3 className="text-neutral-900 text-2xl sm:text-3xl font-semibold font-['Manrope'] leading-tight mb-8">
+      <h3 className="text-neutral-900 text-2xl sm:text-3xl font-semibold font-manrope leading-tight mb-8">
         Get in Touch
       </h3>
 
@@ -46,7 +46,7 @@ const GetInTouch = () => {
             placeholder="Full name"
             value={formData.fullName}
             onChange={handleInputChange}
-            className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 placeholder-neutral-400 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 transition-all"
+            className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 placeholder-neutral-400 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 transition-all"
           />
         </div>
 
@@ -57,7 +57,7 @@ const GetInTouch = () => {
             placeholder="Email"
             value={formData.email}
             onChange={handleInputChange}
-            className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 placeholder-neutral-400 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 transition-all"
+            className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 placeholder-neutral-400 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 transition-all"
           />
         </div>
 
@@ -68,7 +68,7 @@ const GetInTouch = () => {
             placeholder="Subject"
             value={formData.subject}
             onChange={handleInputChange}
-            className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 placeholder-neutral-400 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 transition-all"
+            className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 placeholder-neutral-400 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 transition-all"
           />
         </div>
 
@@ -79,7 +79,7 @@ const GetInTouch = () => {
             rows={6}
             value={formData.message}
             onChange={handleInputChange}
-            className="w-full px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 placeholder-neutral-400 text-sm font-normal font-['Manrope'] leading-7 resize-none focus:outline-none focus:ring-2 focus:ring-neutral-300 transition-all"
+            className="w-full px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 placeholder-neutral-400 text-sm font-normal font-manrope leading-7 resize-none focus:outline-none focus:ring-2 focus:ring-neutral-300 transition-all"
           />
         </div>
 

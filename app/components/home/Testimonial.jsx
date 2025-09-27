@@ -142,16 +142,16 @@ const Testimonial = () => {
                     >
                       {/* Quote Text */}
                       <div className="space-y-6">
-                        <blockquote className="text-zinc-800 text-lg sm:text-xl font-normal font-['Manrope'] leading-8 sm:leading-10">
+                        <blockquote className="text-zinc-800 text-lg sm:text-xl font-normal font-manrope leading-8 sm:leading-10">
                           “{testimonial.quote}”
                         </blockquote>
                       </div>
                       {/* Author Info */}
                       <div className="space-y-1">
-                        <div className="text-zinc-800 text-base font-bold font-['Manrope'] leading-tight">
+                        <div className="text-zinc-800 text-base font-bold font-manrope leading-tight">
                           {testimonial.author}
                         </div>
-                        <div className="text-zinc-800 text-sm font-medium font-['Manrope'] leading-tight">
+                        <div className="text-zinc-800 text-sm font-medium font-manrope leading-tight">
                           {testimonial.location}
                         </div>
                       </div>
@@ -166,7 +166,7 @@ const Testimonial = () => {
                 className="flex items-center justify-end mt-8 sm:mt-12 space-x-4"
               >
                 {/* Current/Total Indicator */}
-                <div className="text-zinc-800 text-base font-['Manrope'] leading-relaxed">
+                <div className="text-zinc-800 text-base font-manrope leading-relaxed">
                   <span className="font-semibold">
                     {String(activeIndex + 1).padStart(2, "0")}
                   </span>

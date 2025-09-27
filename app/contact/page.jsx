@@ -33,7 +33,7 @@ const page = () => {
                 <h4 className="text-neutral-900 text-3xl sm:text-4xl lg:text-5xl font-medium font-['Space_Grotesk'] uppercase leading-tight mb-8">
                   YOUR QUESTIONS
                 </h4>
-                <p className="text-neutral-600 text-base sm:text-lg font-normal font-['Manrope'] leading-relaxed max-w-2xl mx-auto">
+                <p className="text-neutral-600 text-base sm:text-lg font-normal font-manrope leading-relaxed max-w-2xl mx-auto">
                   Get in touch today through our easy contact form, track orders and packages throughout our worldwide distribution network.
                 </p>
               </div>
@@ -49,14 +49,14 @@ const page = () => {
                 <div className="order-1 lg:order-2 space-y-8">
                   {/* Call Center */}
                   <div className="bg-gray-50 rounded-2xl p-6 lg:p-8">
-                    <h5 className="text-neutral-900 text-xl font-semibold font-['Manrope'] mb-4">
+                    <h5 className="text-neutral-900 text-xl font-semibold font-manrope mb-4">
                       Call Center
                     </h5>
                     <div className="space-y-2">
-                      <p className="text-neutral-600 text-base font-normal font-['Manrope']">
+                      <p className="text-neutral-600 text-base font-normal font-manrope">
                         +1 800 100 900 234
                       </p>
-                      <p className="text-neutral-600 text-base font-normal font-['Manrope']">
+                      <p className="text-neutral-600 text-base font-normal font-manrope">
                         +1 800 (888) 789-8678
                       </p>
                     </div>
@@ -64,14 +64,14 @@ const page = () => {
 
                   {/* Our Location */}
                   <div className="bg-gray-50 rounded-2xl p-6 lg:p-8">
-                    <h5 className="text-neutral-900 text-xl font-semibold font-['Manrope'] mb-4">
+                    <h5 className="text-neutral-900 text-xl font-semibold font-manrope mb-4">
                       Our Location
                     </h5>
                     <div className="space-y-2">
-                      <p className="text-neutral-600 text-base font-normal font-['Manrope']">
+                      <p className="text-neutral-600 text-base font-normal font-manrope">
                         USA, New York - 10001
                       </p>
-                      <p className="text-neutral-600 text-base font-normal font-['Manrope']">
+                      <p className="text-neutral-600 text-base font-normal font-manrope">
                         764, First Avenue 1
                       </p>
                     </div>
@@ -79,11 +79,11 @@ const page = () => {
 
                   {/* Email */}
                   <div className="bg-gray-50 rounded-2xl p-6 lg:p-8">
-                    <h5 className="text-neutral-900 text-xl font-semibold font-['Manrope'] mb-4">
+                    <h5 className="text-neutral-900 text-xl font-semibold font-manrope mb-4">
                       Email
                     </h5>
                     <div className="space-y-2">
-                      <p className="text-neutral-600 text-base font-normal font-['Manrope']">
+                      <p className="text-neutral-600 text-base font-normal font-manrope">
                         logico@mail.co
                       </p>
                     </div>
@@ -91,7 +91,7 @@ const page = () => {
 
                   {/* Social Networks */}
                   <div className="bg-gray-50 rounded-2xl p-6 lg:p-8">
-                    <h5 className="text-neutral-900 text-xl font-semibold font-['Manrope'] mb-4">
+                    <h5 className="text-neutral-900 text-xl font-semibold font-manrope mb-4">
                       Social Networks
                     </h5>
                     <div className="flex space-x-4">

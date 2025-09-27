@@ -49,21 +49,21 @@ const Map = () => {
           viewport={{ once: true }}
           className="absolute bottom-8 left-8 bg-white rounded-2xl p-6 shadow-lg max-w-xs hidden lg:block"
         >
-          <h3 className="text-neutral-900 text-lg font-semibold font-['Manrope'] mb-3">
+          <h3 className="text-neutral-900 text-lg font-semibold font-manrope mb-3">
             Our Location
           </h3>
           <div className="space-y-2">
-            <p className="text-neutral-600 text-sm font-normal font-['Manrope']">
+            <p className="text-neutral-600 text-sm font-normal font-manrope">
               USA, New York - 10001
             </p>
-            <p className="text-neutral-600 text-sm font-normal font-['Manrope']">
+            <p className="text-neutral-600 text-sm font-normal font-manrope">
               764, First Avenue 1
             </p>
             <div className="mt-4 pt-4 border-t border-gray-100">
-              <p className="text-neutral-900 text-sm font-medium font-['Manrope']">
+              <p className="text-neutral-900 text-sm font-medium font-manrope">
                 Call Center
               </p>
-              <p className="text-[#39C0C8] text-sm font-semibold font-['Manrope']">
+              <p className="text-[#39C0C8] text-sm font-semibold font-manrope">
                 +1 800 100 900 234
               </p>
             </div>

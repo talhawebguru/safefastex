@@ -24,7 +24,7 @@ const ArticleBody = ({ blocks = [] }) => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.4 }}
-              className="text-zinc-800 text-sm md:text-[15px] font-normal font-['Manrope'] leading-[1.85] tracking-tight"
+              className="text-zinc-800 text-sm md:text-[15px] font-normal font-manrope leading-[1.85] tracking-tight"
             >
               {block.content}
             </motion.p>
@@ -45,7 +45,7 @@ const ArticleBody = ({ blocks = [] }) => {
                 <span className="w-3 h-3 rounded-sm bg-zinc-800" />
                 <span className="w-3 h-3 rounded-sm bg-[#39C0C8]" />
               </span>
-              <p className="text-zinc-800 text-sm md:text-[15px] font-normal font-['Manrope'] leading-[1.85] tracking-tight">
+              <p className="text-zinc-800 text-sm md:text-[15px] font-normal font-manrope leading-[1.85] tracking-tight">
                 {block.content}
               </p>
             </motion.blockquote>

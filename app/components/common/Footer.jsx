@@ -61,7 +61,7 @@ const Footer = () => {
               {/* Get in touch label */}
               <motion.div
                 variants={itemVariants}
-                className="text-white text-sm font-normal font-['Manrope'] leading-loose"
+                className="text-white text-sm font-normal font-manrope leading-loose"
               >
                 / get in touch /
               </motion.div>
@@ -117,7 +117,7 @@ const Footer = () => {
               {/* Description */}
               <motion.p
                 variants={itemVariants}
-                className="text-neutral-200 text-base sm:text-lg font-normal font-['Manrope'] leading-loose max-w-md"
+                className="text-neutral-200 text-base sm:text-lg font-normal font-manrope leading-loose max-w-md"
               >
                 Pacific hake false trevally queen parrotfish black prickleback
                 <br />
@@ -131,19 +131,19 @@ const Footer = () => {
               >
                 {/* Call Center */}
                 <div className="space-y-3">
-                  <h4 className="text-white text-lg font-bold font-['Manrope'] leading-loose">
+                  <h4 className="text-white text-lg font-bold font-manrope leading-loose">
                     Call Center
                   </h4>
                   <div className="space-y-1">
                     <a
                       href="tel:+18001009752034"
-                      className="block text-white text-base font-normal font-['Manrope'] underline leading-7 hover:text-neutral-200 transition-colors"
+                      className="block text-white text-base font-normal font-manrope underline leading-7 hover:text-neutral-200 transition-colors"
                     >
                       + 1-800 100 975 20 34
                     </a>
                     <a
                       href="tel:+12318002345678"
-                      className="block text-white text-base font-normal font-['Manrope'] underline leading-7 hover:text-neutral-200 transition-colors"
+                      className="block text-white text-base font-normal font-manrope underline leading-7 hover:text-neutral-200 transition-colors"
                     >
                       + (123) 1800-234-5678
                     </a>
@@ -152,10 +152,10 @@ const Footer = () => {
 
                 {/* Our Location */}
                 <div className="space-y-3">
-                  <h4 className="text-white text-lg font-bold font-['Manrope'] leading-loose">
+                  <h4 className="text-white text-lg font-bold font-manrope leading-loose">
                     Our Location
                   </h4>
-                  <address className="text-white text-base font-normal font-['Manrope'] leading-7 not-italic">
+                  <address className="text-white text-base font-normal font-manrope leading-7 not-italic">
                     USA, New York – 1060
                     <br />
                     Str. First Avenue 1
@@ -164,12 +164,12 @@ const Footer = () => {
 
                 {/* Email */}
                 <div className="space-y-3">
-                  <h4 className="text-white text-lg font-bold font-['Manrope'] leading-loose">
+                  <h4 className="text-white text-lg font-bold font-manrope leading-loose">
                     Email
                   </h4>
                   <a
                     href="mailto:logico@mail.co"
-                    className="block text-white text-base font-normal font-['Manrope'] underline leading-7 hover:text-neutral-200 transition-colors"
+                    className="block text-white text-base font-normal font-manrope underline leading-7 hover:text-neutral-200 transition-colors"
                   >
                     logico@mail.co
                   </a>
@@ -177,7 +177,7 @@ const Footer = () => {
 
                 {/* Social Network */}
                 <div className="space-y-3">
-                  <h4 className="text-white text-lg font-bold font-['Manrope'] leading-loose">
+                  <h4 className="text-white text-lg font-bold font-manrope leading-loose">
                     Social network
                   </h4>
                   <div className="flex items-center gap-6">
@@ -321,21 +321,21 @@ const Footer = () => {
               </div>
 
               {/* Since 2000 */}
-              <div className="text-6xl sm:text-7xl font-bold font-['Manrope'] leading-tight text-transparent bg-gradient-to-r from-[#39C0C8] to-[#118991] bg-clip-text">
+              <div className="text-6xl sm:text-7xl font-bold font-manrope leading-tight text-transparent bg-gradient-to-r from-[#39C0C8] to-[#118991] bg-clip-text">
                 since 2000
               </div>
             </motion.div>
 
             {/* Company */}
             <motion.div variants={itemVariants} className="space-y-4">
-              <h3 className="text-white text-xl font-semibold font-['Manrope'] leading-loose">
+              <h3 className="text-white text-xl font-semibold font-manrope leading-loose">
                 Company
               </h3>
               <ul className="space-y-2">
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     About
                   </a>
@@ -343,7 +343,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Expertise
                   </a>
@@ -351,7 +351,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Sustainability
                   </a>
@@ -359,7 +359,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     News & Media
                   </a>
@@ -367,7 +367,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Case Studies
                   </a>
@@ -375,7 +375,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Contacts
                   </a>
@@ -385,14 +385,14 @@ const Footer = () => {
 
             {/* Services */}
             <motion.div variants={itemVariants} className="space-y-4">
-              <h3 className="text-white text-xl font-semibold font-['Manrope'] leading-loose">
+              <h3 className="text-white text-xl font-semibold font-manrope leading-loose">
                 Services
               </h3>
               <ul className="space-y-2">
                 <li>
                   <a
                     href="/services/air-freight"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Air Freight
                   </a>
@@ -400,7 +400,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/services/ship-freight"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Sea Freight
                   </a>
@@ -408,7 +408,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/services/road-freight"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Land Transport
                   </a>
@@ -416,7 +416,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/services/train-freight"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Groupage
                   </a>
@@ -424,7 +424,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Consultancy
                   </a>
@@ -432,7 +432,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Value Added Services
                   </a>
@@ -442,14 +442,14 @@ const Footer = () => {
 
             {/* Menu */}
             <motion.div variants={itemVariants} className="space-y-4">
-              <h3 className="text-white text-xl font-semibold font-['Manrope'] leading-loose">
+              <h3 className="text-white text-xl font-semibold font-manrope leading-loose">
                 Menu
               </h3>
               <ul className="space-y-2">
                 <li>
                   <a
                     href="/"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Home pages
                   </a>
@@ -457,7 +457,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Pages
                   </a>
@@ -465,7 +465,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Shop
                   </a>
@@ -473,7 +473,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Blog
                   </a>
@@ -481,7 +481,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Team
                   </a>
@@ -489,7 +489,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white text-base font-normal font-['Manrope'] leading-loose hover:text-neutral-200 transition-colors"
+                    className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Location
                   </a>
@@ -506,7 +506,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row justify-between items-center pt-12 mt-12 border-t border-stone-700 gap-4"
           >
-            <div className="flex items-center gap-2 text-stone-300 text-sm font-normal font-['Manrope'] leading-loose">
+            <div className="flex items-center gap-2 text-stone-300 text-sm font-normal font-manrope leading-loose">
               <span>©</span>
               <a
                 href="#"
@@ -517,7 +517,7 @@ const Footer = () => {
               <span>2025. All rights reserved.</span>
             </div>
 
-            <div className="flex items-center gap-4 text-stone-300 text-sm font-normal font-['Manrope'] leading-loose">
+            <div className="flex items-center gap-4 text-stone-300 text-sm font-normal font-manrope leading-loose">
               <span>Terms of use</span>
               <a
                 href="#"

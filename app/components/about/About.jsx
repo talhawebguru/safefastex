@@ -92,7 +92,7 @@ const About = () => {
           >
             {/* Large Numbers */}
             <div className="flex-1 text-center lg:text-left">
-              <motion.h2 className="text-wrap text-6xl sm:text-[120px] md:text-[140px] lg:text-[160px] xl:text-[180px] 2xl:text-[200px] font-semibold font-['Manrope'] leading-[0.85] text-transparent bg-clip-text bg-gradient-to-r from-[#39C0C8] via-[#2EA6AD] to-[#118991] tracking-[-0.04em] select-none">
+              <motion.h2 className="text-wrap text-6xl sm:text-[120px] md:text-[140px] lg:text-[160px] xl:text-[180px] 2xl:text-[200px] font-semibold font-manrope leading-[0.85] text-transparent bg-clip-text bg-gradient-to-r from-[#39C0C8] via-[#2EA6AD] to-[#118991] tracking-[-0.04em] select-none">
                 {displayValue}
               </motion.h2>
             </div>
@@ -103,10 +103,10 @@ const About = () => {
               <div className="hidden lg:flex items-center justify-center h-full">
                 <div className="transform rotate-90 origin-center whitespace-nowrap">
                   <div className="space-y-2 text-center">
-                    <p className="text-neutral-900 text-xl xl:text-2xl font-medium font-['Manrope'] leading-tight">
+                    <p className="text-neutral-900 text-xl xl:text-2xl font-medium font-manrope leading-tight">
                       Delivered tons
                     </p>
-                    <p className="text-neutral-900 text-xl xl:text-2xl font-medium font-['Manrope'] leading-tight">
+                    <p className="text-neutral-900 text-xl xl:text-2xl font-medium font-manrope leading-tight">
                       of products
                     </p>
                   </div>
@@ -115,7 +115,7 @@ const About = () => {
 
               {/* Mobile/Tablet - Normal Text */}
               <div className="lg:hidden text-center">
-                <p className="text-neutral-900 text-lg sm:text-xl font-medium font-['Manrope'] leading-relaxed">
+                <p className="text-neutral-900 text-lg sm:text-xl font-medium font-manrope leading-relaxed">
                   Delivered tons of products
                 </p>
               </div>
@@ -143,19 +143,19 @@ const About = () => {
                 className="space-y-6 sm:space-y-7 lg:space-y-8"
               >
                 {/* First Paragraph - Bold */}
-                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-bold font-['Manrope'] leading-relaxed">
+                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-bold font-manrope leading-relaxed">
                   Halosaur duckbilled barracudina, goosefish gar pleco, chum
                   salmon armoured catfish gudgeon sawfish whitefish orbicular
                   batfish
                 </p>
 
                 {/* Second Paragraph - Regular */}
-                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-normal font-['Manrope'] leading-relaxed">
+                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-normal font-manrope leading-relaxed">
                   mummichog paradise fish!
                 </p>
 
                 {/* Third Paragraph - Regular */}
-                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-normal font-['Manrope'] leading-relaxed">
+                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-normal font-manrope leading-relaxed">
                   Triggerfish bluntnose knifefish upside-down catfish cobia
                   spookfish convict cichlid, cat shark saw shark trout cod."
                   Pacific hake false trevally queen parrotfish black prickleback
@@ -166,7 +166,7 @@ const About = () => {
                 </p>
 
                 {/* Fourth Paragraph - Regular */}
-                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-normal font-['Manrope'] leading-relaxed">
+                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-normal font-manrope leading-relaxed">
                   Triggerfish bluntnose knifefish upside-down catfish cobia
                   spookfish convict cichlid, "cat shark; saw shark trout cod."
                   Pacific hake false trevally queen parrotfish black prickleback

@@ -118,7 +118,7 @@ const Features = () => {
               {/* Features Label */}
               <motion.div
                 variants={itemVariants}
-                className="text-neutral-900 text-xs sm:text-sm font-medium font-['Manrope'] leading-loose"
+                className="text-neutral-900 text-xs sm:text-sm font-medium font-manrope leading-loose"
               >
                 / features /
               </motion.div>
@@ -152,7 +152,7 @@ const Features = () => {
                       }
                       className="w-full py-3 sm:py-4 flex items-center justify-between text-left hover:bg-gray-50/50 transition-colors"
                     >
-                      <span className="text-neutral-900 text-base sm:text-lg lg:text-xl font-semibold font-['Manrope'] leading-loose pr-4">
+                      <span className="text-neutral-900 text-base sm:text-lg lg:text-xl font-semibold font-manrope leading-loose pr-4">
                         {feature.title}
                       </span>
                       <div className="flex-shrink-0">
@@ -176,7 +176,7 @@ const Features = () => {
                       className="overflow-hidden"
                     >
                       <div className="pb-4 sm:pb-6">
-                        <p className="text-zinc-800 text-sm sm:text-base lg:text-lg font-normal font-['Manrope'] leading-relaxed sm:leading-loose">
+                        <p className="text-zinc-800 text-sm sm:text-base lg:text-lg font-normal font-manrope leading-relaxed sm:leading-loose">
                           {feature.description}
                         </p>
                       </div>

@@ -69,7 +69,7 @@ const NameBanner = ({
                 {/* Breadcrumb Navigation */}
                 <motion.div variants={itemVariants}>
                   <div className="bg-white rounded-2xl px-6 py-4 sm:px-8 sm:py-5 shadow-lg">
-                    <nav className="flex items-center space-x-2 text-sm font-normal font-['Manrope'] leading-tight">
+                    <nav className="flex items-center space-x-2 text-sm font-normal font-manrope leading-tight">
                       {breadcrumbs.map((breadcrumb, index) => (
                         <span key={index} className="flex items-center space-x-2">
                           {breadcrumb.href ? (

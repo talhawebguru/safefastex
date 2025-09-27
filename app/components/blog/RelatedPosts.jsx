@@ -11,7 +11,7 @@ const RelatedPosts = ({ posts = [] }) => {
         <h3 className="text-neutral-900 text-3xl font-semibold font-['Space_Grotesk'] uppercase leading-tight">
           Related Articles
         </h3>
-        <Link href="/blog" className="text-sm font-medium font-['Manrope'] text-zinc-800 border-b border-zinc-800 hover:text-neutral-600 hover:border-neutral-600 transition-colors">
+        <Link href="/blog" className="text-sm font-medium font-manrope text-zinc-800 border-b border-zinc-800 hover:text-neutral-600 hover:border-neutral-600 transition-colors">
           View all
         </Link>
       </div>
@@ -35,14 +35,14 @@ const RelatedPosts = ({ posts = [] }) => {
               />
               <div className="absolute top-4 left-4">
                 <div className={`${post.categoryColor} rounded-2xl px-4 py-2 flex justify-center items-center`}> 
-                  <span className="text-zinc-800 text-xs font-medium font-['Manrope'] leading-tight">{post.category}</span>
+                  <span className="text-zinc-800 text-xs font-medium font-manrope leading-tight">{post.category}</span>
                 </div>
               </div>
             </div>
-            <h4 className="text-zinc-800 text-xl font-semibold font-['Manrope'] leading-8 mb-3 group-hover:text-neutral-600 transition-colors">
+            <h4 className="text-zinc-800 text-xl font-semibold font-manrope leading-8 mb-3 group-hover:text-neutral-600 transition-colors">
               {post.title}
             </h4>
-            <p className="text-zinc-800 text-sm font-normal font-['Manrope'] leading-relaxed line-clamp-3">
+            <p className="text-zinc-800 text-sm font-normal font-manrope leading-relaxed line-clamp-3">
               {post.excerpt}
             </p>
           </motion.article>

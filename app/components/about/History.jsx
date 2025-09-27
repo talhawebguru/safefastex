@@ -81,7 +81,7 @@ const History = () => {
           {/* Header Section */}
           <div className="text-center space-y-8">
             {/* Breadcrumb */}
-            <motion.p variants={itemVariants} className="text-neutral-900 text-sm font-medium font-['Manrope'] leading-loose">
+            <motion.p variants={itemVariants} className="text-neutral-900 text-sm font-medium font-manrope leading-loose">
               / history /
             </motion.p>
 
@@ -155,12 +155,12 @@ const History = () => {
                     {/* Content with HR */}
                     <div className={`space-y-4 sm:space-y-6 lg:space-y-8 ${item.hasTopBorder ? 'border-t-2 border-neutral-900 pt-4 sm:pt-6 lg:pt-8' : ''}`}>
                       {/* Title */}
-                      <h4 className="text-neutral-900 text-base sm:text-lg md:text-xl lg:text-2xl font-semibold font-['Manrope'] leading-loose tracking-[-0.01em]">
+                      <h4 className="text-neutral-900 text-base sm:text-lg md:text-xl lg:text-2xl font-semibold font-manrope leading-loose tracking-[-0.01em]">
                         {item.title}
                       </h4>
 
                       {/* Description */}
-                      <p className="text-zinc-800 text-sm sm:text-base lg:text-lg font-normal font-['Manrope'] leading-loose">
+                      <p className="text-zinc-800 text-sm sm:text-base lg:text-lg font-normal font-manrope leading-loose">
                         {item.description}
                       </p>
                     </div>
@@ -172,7 +172,7 @@ const History = () => {
             {/* Custom Pagination */}
             <div className="flex items-center justify-center mt-8 lg:mt-12 space-x-4">
               {/* Current slide indicator */}
-              <div className="text-zinc-800 text-base font-semibold font-['Manrope'] leading-relaxed">
+              <div className="text-zinc-800 text-base font-semibold font-manrope leading-relaxed">
                 {String(activeIndex + 1).padStart(2, '0')}
                 <span className="font-medium"> /03</span>
               </div>

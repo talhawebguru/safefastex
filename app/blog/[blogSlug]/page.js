@@ -27,7 +27,7 @@ export default function BlogArticlePage({ params }) {
     return (
       <main className="py-32">
         <Container>
-          <p className="text-center text-zinc-600 font-['Manrope']">
+          <p className="text-center text-zinc-600 font-manrope">
             Post not found.
           </p>
         </Container>
@@ -47,7 +47,7 @@ export default function BlogArticlePage({ params }) {
       />
       <Container>
         {/* Breadcrumbs */}
-        <nav className="text-xs font-['Manrope'] text-zinc-600 mb-8 flex items-center space-x-2">
+        <nav className="text-xs font-manrope text-zinc-600 mb-8 flex items-center space-x-2">
           <Link href="/" className="hover:text-zinc-800 transition-colors">
             Home
           </Link>
@@ -61,7 +61,7 @@ export default function BlogArticlePage({ params }) {
 
         {/* Meta & Cover */}
         <div className="">
-          <div className="flex items-center text-[11px] tracking-wide font-['Manrope'] text-zinc-600 gap-2 mb-4">
+          <div className="flex items-center text-[11px] tracking-wide font-manrope text-zinc-600 gap-2 mb-4">
             <span>{post.date}</span>
             <span className="w-1 h-1 rounded-full bg-zinc-400" />
             <span>{post.author}</span>
@@ -82,13 +82,13 @@ export default function BlogArticlePage({ params }) {
               <div
                 className={`${post.categoryColor} rounded-2xl px-5 py-2 flex justify-center items-center`}
               >
-                <span className="text-zinc-800 text-xs font-medium font-['Manrope']">
+                <span className="text-zinc-800 text-xs font-medium font-manrope">
                   {post.category}
                 </span>
               </div>
             </div>
           </div>
-          <h1 className="text-zinc-800 text-2xl sm:text-3xl lg:text-[30px] font-semibold font-['Manrope'] leading-snug mb-8">
+          <h1 className="text-zinc-800 text-2xl sm:text-3xl lg:text-[30px] font-semibold font-manrope leading-snug mb-8">
             {post.title}
           </h1>
         </div>
@@ -104,7 +104,7 @@ export default function BlogArticlePage({ params }) {
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="px-4 py-2 rounded-full bg-zinc-100 text-zinc-700 text-xs font-medium font-['Manrope']"
+                className="px-4 py-2 rounded-full bg-zinc-100 text-zinc-700 text-xs font-medium font-manrope"
               >
                 #{tag}
               </span>

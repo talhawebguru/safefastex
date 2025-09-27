@@ -90,7 +90,7 @@ const GeneralForm = () => {
             <form onSubmit={handleSubmit} className="space-y-12">
               {/* General Information Section */}
               <motion.div variants={itemVariants}>
-                <h2 className="text-neutral-900 text-3xl font-semibold font-['Manrope'] leading-9 mb-8">
+                <h2 className="text-neutral-900 text-3xl font-semibold font-manrope leading-9 mb-8">
                   General information
                 </h2>
 
@@ -99,10 +99,10 @@ const GeneralForm = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-400 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-400 text-sm font-normal font-manrope leading-7">
                           First Name{" "}
                         </span>
-                        <span className="text-red-500 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-red-500 text-sm font-normal font-manrope leading-7">
                           *
                         </span>
                       </label>
@@ -111,16 +111,16 @@ const GeneralForm = () => {
                         name="firstName"
                         value={formData.firstName}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
+                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
                         required
                       />
                     </div>
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-400 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-400 text-sm font-normal font-manrope leading-7">
                           Last Name{" "}
                         </span>
-                        <span className="text-red-500 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-red-500 text-sm font-normal font-manrope leading-7">
                           *
                         </span>
                       </label>
@@ -129,7 +129,7 @@ const GeneralForm = () => {
                         name="lastName"
                         value={formData.lastName}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
+                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
                         required
                       />
                     </div>
@@ -139,10 +139,10 @@ const GeneralForm = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-400 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-400 text-sm font-normal font-manrope leading-7">
                           Company Name{" "}
                         </span>
-                        <span className="text-red-500 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-red-500 text-sm font-normal font-manrope leading-7">
                           *
                         </span>
                       </label>
@@ -151,16 +151,16 @@ const GeneralForm = () => {
                         name="companyName"
                         value={formData.companyName}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
+                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
                         required
                       />
                     </div>
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-400 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-400 text-sm font-normal font-manrope leading-7">
                           Email{" "}
                         </span>
-                        <span className="text-red-500 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-red-500 text-sm font-normal font-manrope leading-7">
                           *
                         </span>
                       </label>
@@ -169,7 +169,7 @@ const GeneralForm = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
+                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
                         required
                       />
                     </div>
@@ -179,10 +179,10 @@ const GeneralForm = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-400 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-400 text-sm font-normal font-manrope leading-7">
                           Phone (Use local format){" "}
                         </span>
-                        <span className="text-red-500 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-red-500 text-sm font-normal font-manrope leading-7">
                           *
                         </span>
                       </label>
@@ -191,13 +191,13 @@ const GeneralForm = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
+                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
                         required
                       />
                     </div>
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-400 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-400 text-sm font-normal font-manrope leading-7">
                           Extension
                         </span>
                       </label>
@@ -206,7 +206,7 @@ const GeneralForm = () => {
                         name="extension"
                         value={formData.extension}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
+                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
                       />
                     </div>
                   </div>
@@ -215,10 +215,10 @@ const GeneralForm = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-900 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-900 text-sm font-normal font-manrope leading-7">
                           From Country{" "}
                         </span>
-                        <span className="text-red-500 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-red-500 text-sm font-normal font-manrope leading-7">
                           *
                         </span>
                       </label>
@@ -227,7 +227,7 @@ const GeneralForm = () => {
                           name="fromCountry"
                           value={formData.fromCountry}
                           onChange={handleInputChange}
-                          className="w-full h-12 px-4 py-3 border border-neutral-900 rounded-[10px] text-black text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 appearance-none bg-white"
+                          className="w-full h-12 px-4 py-3 border border-neutral-900 rounded-[10px] text-black text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 appearance-none bg-white"
                           required
                         >
                           <option value="First Choice">First Choice</option>
@@ -240,10 +240,10 @@ const GeneralForm = () => {
                     </div>
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-400 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-400 text-sm font-normal font-manrope leading-7">
                           From Postal Code{" "}
                         </span>
-                        <span className="text-red-500 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-red-500 text-sm font-normal font-manrope leading-7">
                           *
                         </span>
                       </label>
@@ -252,7 +252,7 @@ const GeneralForm = () => {
                         name="fromPostalCode"
                         value={formData.fromPostalCode}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
+                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
                         required
                       />
                     </div>
@@ -262,10 +262,10 @@ const GeneralForm = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-900 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-900 text-sm font-normal font-manrope leading-7">
                           To Country{" "}
                         </span>
-                        <span className="text-red-500 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-red-500 text-sm font-normal font-manrope leading-7">
                           *
                         </span>
                       </label>
@@ -274,7 +274,7 @@ const GeneralForm = () => {
                           name="toCountry"
                           value={formData.toCountry}
                           onChange={handleInputChange}
-                          className="w-full h-12 px-4 py-3 border border-neutral-900 rounded-[10px] text-black text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 appearance-none bg-white"
+                          className="w-full h-12 px-4 py-3 border border-neutral-900 rounded-[10px] text-black text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 appearance-none bg-white"
                           required
                         >
                           <option value="First Choice">First Choice</option>
@@ -287,10 +287,10 @@ const GeneralForm = () => {
                     </div>
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-400 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-400 text-sm font-normal font-manrope leading-7">
                           To Postal Code{" "}
                         </span>
-                        <span className="text-red-500 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-red-500 text-sm font-normal font-manrope leading-7">
                           *
                         </span>
                       </label>
@@ -299,7 +299,7 @@ const GeneralForm = () => {
                         name="toPostalCode"
                         value={formData.toPostalCode}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
+                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
                         required
                       />
                     </div>
@@ -309,10 +309,10 @@ const GeneralForm = () => {
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-400 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-400 text-sm font-normal font-manrope leading-7">
                           Pickup Date{" "}
                         </span>
-                        <span className="text-red-500 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-red-500 text-sm font-normal font-manrope leading-7">
                           *
                         </span>
                       </label>
@@ -322,7 +322,7 @@ const GeneralForm = () => {
                           name="pickupDate"
                           value={formData.pickupDate}
                           onChange={handleInputChange}
-                          className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
+                          className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
                           required
                         />
                         <FiCalendar className="absolute right-4 top-1/2 transform -translate-y-1/2 w-4 h-4 text-neutral-900 pointer-events-none" />
@@ -330,7 +330,7 @@ const GeneralForm = () => {
                     </div>
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-400 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-400 text-sm font-normal font-manrope leading-7">
                           Discount
                         </span>
                       </label>
@@ -339,12 +339,12 @@ const GeneralForm = () => {
                         name="discount"
                         value={formData.discount}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
+                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
                       />
                     </div>
                     <div>
                       <label className="block mb-2">
-                        <span className="text-neutral-400 text-sm font-normal font-['Manrope'] leading-7">
+                        <span className="text-neutral-400 text-sm font-normal font-manrope leading-7">
                           Absolute Min Charge
                         </span>
                       </label>
@@ -353,7 +353,7 @@ const GeneralForm = () => {
                         name="absoluteMinCharge"
                         value={formData.absoluteMinCharge}
                         onChange={handleInputChange}
-                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-['Manrope'] leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
+                        className="w-full h-12 px-4 py-3 border border-zinc-400 rounded-[10px] text-neutral-900 text-sm font-normal font-manrope leading-7 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-neutral-900 transition-all"
                       />
                     </div>
                   </div>
@@ -362,7 +362,7 @@ const GeneralForm = () => {
 
               {/* Pickup Services Section */}
               <motion.div variants={itemVariants}>
-                <h2 className="text-neutral-900 text-3xl font-semibold font-['Manrope'] leading-9 mb-8">
+                <h2 className="text-neutral-900 text-3xl font-semibold font-manrope leading-9 mb-8">
                   Pickup Services
                 </h2>
 
@@ -379,7 +379,7 @@ const GeneralForm = () => {
                       />
                       <label
                         htmlFor="blindShipment"
-                        className="text-zinc-800 text-base font-normal font-['Manrope'] leading-9 tracking-tight cursor-pointer"
+                        className="text-zinc-800 text-base font-normal font-manrope leading-9 tracking-tight cursor-pointer"
                       >
                         Blind Shipment
                       </label>
@@ -397,7 +397,7 @@ const GeneralForm = () => {
                       />
                       <label
                         htmlFor="constructionUtility"
-                        className="text-zinc-800 text-base font-normal font-['Manrope'] leading-9 tracking-tight cursor-pointer"
+                        className="text-zinc-800 text-base font-normal font-manrope leading-9 tracking-tight cursor-pointer"
                       >
                         Construction/Utility
                       </label>
@@ -415,7 +415,7 @@ const GeneralForm = () => {
                       />
                       <label
                         htmlFor="containerStation"
-                        className="text-zinc-800 text-base font-normal font-['Manrope'] leading-9 tracking-tight cursor-pointer"
+                        className="text-zinc-800 text-base font-normal font-manrope leading-9 tracking-tight cursor-pointer"
                       >
                         Container Station
                       </label>
@@ -431,7 +431,7 @@ const GeneralForm = () => {
                       />
                       <label
                         htmlFor="exhibition"
-                        className="text-zinc-800 text-base font-normal font-['Manrope'] leading-9 tracking-tight cursor-pointer"
+                        className="text-zinc-800 text-base font-normal font-manrope leading-9 tracking-tight cursor-pointer"
                       >
                         Exhibition
                       </label>
@@ -450,7 +450,7 @@ const GeneralForm = () => {
                       />
                       <label
                         htmlFor="holidayWeekend"
-                        className="text-zinc-800 text-base font-normal font-['Manrope'] leading-9 tracking-tight cursor-pointer"
+                        className="text-zinc-800 text-base font-normal font-manrope leading-9 tracking-tight cursor-pointer"
                       >
                         Holiday/Weekend
                       </label>
@@ -466,7 +466,7 @@ const GeneralForm = () => {
                       />
                       <label
                         htmlFor="insidePickup"
-                        className="text-zinc-800 text-base font-normal font-['Manrope'] leading-9 tracking-tight cursor-pointer"
+                        className="text-zinc-800 text-base font-normal font-manrope leading-9 tracking-tight cursor-pointer"
                       >
                         Inside Pickup
                       </label>
@@ -482,7 +482,7 @@ const GeneralForm = () => {
                       />
                       <label
                         htmlFor="liftGateService"
-                        className="text-zinc-800 text-base font-normal font-['Manrope'] leading-9 tracking-tight cursor-pointer"
+                        className="text-zinc-800 text-base font-normal font-manrope leading-9 tracking-tight cursor-pointer"
                       >
                         Lift Gate Service
                       </label>
@@ -527,10 +527,10 @@ const GeneralForm = () => {
               className="bg-[#39C0C8] rounded-3xl p-8 lg:p-10 flex flex-col justify-between sticky top-28"
             >
               <div>
-                <h3 className="text-neutral-900 text-3xl font-semibold font-['Manrope'] leading-10 mb-6">
+                <h3 className="text-neutral-900 text-3xl font-semibold font-manrope leading-10 mb-6">
                   How we can help you?
                 </h3>
-                <p className="text-zinc-800 text-lg font-normal font-['Manrope'] leading-loose mb-4">
+                <p className="text-zinc-800 text-lg font-normal font-manrope leading-loose mb-4">
                   Triggerfish bluntnose knifefish upside-down catfish cobia
                   spookfish convict cichlid.
                 </p>

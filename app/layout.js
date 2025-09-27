@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
+import { Geist, Geist_Mono, Space_Grotesk, Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-spaceGrotesk",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -48,7 +53,7 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${manrope.variable} antialiased`}
       >
         <Header />
         {children}
