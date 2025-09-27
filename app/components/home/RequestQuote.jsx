@@ -259,16 +259,16 @@ const RequestQuote = () => {
                 >
                   <Link
                     href="/about-us"
-                    className="group relative inline-flex items-center rounded-2xl border border-amber-300 text-black pl-4 sm:pl-6 pr-1 py-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60"
+                    className="group relative inline-flex items-center rounded-2xl border border-[#39C0C8] text-black pl-4 sm:pl-6 pr-1 py-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#39C0C8]/60"
                   >
                     <span
                       aria-hidden
-                      className="pointer-events-none absolute inset-y-0 left-0 w-0 bg-amber-400 transition-[width] duration-300 ease-out group-hover:w-full rounded-2xl"
+                      className="pointer-events-none absolute inset-y-0 left-0 w-0 bg-[#39C0C8] transition-[width] duration-300 ease-out group-hover:w-full rounded-2xl"
                     />
                     <span className="relative z-10 font-semibold text-sm sm:text-base group-hover:text-white">
                       Request Quote
                     </span>
-                    <span className="relative z-10 ml-2 sm:ml-3 inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-amber-400 text-gray-900">
+                    <span className="relative z-10 ml-2 sm:ml-3 inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-[#39C0C8] text-gray-900">
                       <FiArrowUpRight className="h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-200 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]" />
                     </span>
                   </Link>
@@ -308,7 +308,7 @@ const RequestQuote = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-                className="bg-amber-400 rounded-[20px] sm:rounded-[25px] p-6 sm:p-8 lg:p-12 w-full max-w-2xl"
+                className="bg-[#39C0C8] rounded-[20px] sm:rounded-[25px] p-6 sm:p-8 lg:p-12 w-full max-w-2xl"
               >
                 <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 sm:gap-6">
                   <div>

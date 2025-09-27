@@ -44,16 +44,16 @@ const Hero = () => {
             >
               <Link
                 href="/services"
-                className="group relative inline-flex items-center rounded-2xl border border-amber-300 text-white pl-6 pr-1 py-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60"
+                className="group relative inline-flex items-center rounded-2xl border border-[#39C0C8] text-white pl-6 pr-1 py-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#39C0C8]/60"
               >
                 <span
                   aria-hidden
-                  className="pointer-events-none absolute inset-y-0 left-0 w-0 bg-amber-400 transition-[width] duration-300 ease-out group-hover:w-full rounded-2xl"
+                  className="pointer-events-none absolute inset-y-0 left-0 w-0 bg-[#39C0C8] transition-[width] duration-300 ease-out group-hover:w-full rounded-2xl"
                 />
                 <span className="relative z-10 font-semibold group-hover:text-black">
                   Explore Our Services
                 </span>
-                <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-amber-400 text-gray-900">
+                <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#39C0C8] text-gray-900">
                   <FiArrowUpRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]" />
                 </span>
               </Link>

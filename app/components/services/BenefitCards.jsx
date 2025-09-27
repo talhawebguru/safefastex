@@ -7,12 +7,12 @@ import { FaGaugeHigh } from "react-icons/fa6";
 import { PiThermometerColdFill } from "react-icons/pi";
 
 const iconMap = {
-  capacity: <FaCubes className="h-7 w-7 text-amber-400" />,
-  tracking: <FaMapMarkedAlt className="h-7 w-7 text-amber-400" />,
-  secure: <FaShieldAlt className="h-7 w-7 text-amber-400" />,
-  special: <PiThermometerColdFill className="h-7 w-7 text-amber-400" />,
-  speed: <FaGaugeHigh className="h-7 w-7 text-amber-400" />,
-  default: <FaBoxOpen className="h-7 w-7 text-amber-400" />,
+  capacity: <FaCubes className="h-7 w-7 text-[#39C0C8]" />,
+  tracking: <FaMapMarkedAlt className="h-7 w-7 text-[#39C0C8]" />,
+  secure: <FaShieldAlt className="h-7 w-7 text-[#39C0C8]" />,
+  special: <PiThermometerColdFill className="h-7 w-7 text-[#39C0C8]" />,
+  speed: <FaGaugeHigh className="h-7 w-7 text-[#39C0C8]" />,
+  default: <FaBoxOpen className="h-7 w-7 text-[#39C0C8]" />,
 };
 
 const BenefitCards = ({ benefits }) => {

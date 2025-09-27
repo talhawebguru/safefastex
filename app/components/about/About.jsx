@@ -92,7 +92,7 @@ const About = () => {
           >
             {/* Large Numbers */}
             <div className="flex-1 text-center lg:text-left">
-              <motion.h2 className="text-wrap text-6xl sm:text-[120px] md:text-[140px] lg:text-[160px] xl:text-[180px] 2xl:text-[200px] font-semibold font-['Manrope'] leading-[0.85] text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 tracking-[-0.04em] select-none">
+              <motion.h2 className="text-wrap text-6xl sm:text-[120px] md:text-[140px] lg:text-[160px] xl:text-[180px] 2xl:text-[200px] font-semibold font-['Manrope'] leading-[0.85] text-transparent bg-clip-text bg-gradient-to-r from-[#39C0C8] via-[#2EA6AD] to-[#118991] tracking-[-0.04em] select-none">
                 {displayValue}
               </motion.h2>
             </div>

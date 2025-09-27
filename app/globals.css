@@ -1,8 +1,22 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --font-spaceGrotesk: spaceGrotesk, sans-serif;
+  /* Brand color system */
+  --color-brand: #39C0C8;
+  --color-brand-dark: #118991;
+  --color-brand-foreground: #0b4f52;
+  --color-brand-soft: #39C0C810; /* 6% translucent */
 }
+
+/* Brand helper classes (optional semantic aliases) */
+.bg-brand { background-color: var(--color-brand); }
+.bg-brand-dark { background-color: var(--color-brand-dark); }
+.text-brand { color: var(--color-brand); }
+.border-brand { border-color: var(--color-brand); }
+.from-brand { --tw-gradient-from: var(--color-brand) var(--tw-gradient-from-position); --tw-gradient-to: rgb(57 192 200 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+.to-brand-dark { --tw-gradient-to: var(--color-brand-dark) var(--tw-gradient-to-position); }
+.bg-brand-soft { background-color: var(--color-brand-soft); }
 body {
   scroll-behavior: smooth;
 }

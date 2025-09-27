@@ -22,7 +22,7 @@ const ServiceOverview = ({ title, tagline, intro }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-            className="mt-4 text-lg sm:text-xl text-amber-500 font-medium"
+            className="mt-4 text-lg sm:text-xl text-[#39C0C8] font-medium"
           >
             {tagline}
           </motion.p>

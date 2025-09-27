@@ -4,9 +4,9 @@ import { useState } from "react";
 import Container from "../common/Container";
 import Image from "next/image";
 import { FiArrowUpRight, FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import Blog1 from "@/public/images/blog-1.png";
-import Blog2 from "@/public/images/blog-2.png";
-import Blog3 from "@/public/images/blog-3.png";
+import Blog1 from "@/public/images/blog-1.jpg";
+import Blog2 from "@/public/images/blog-2.jpg";
+import Blog3 from "@/public/images/blog-3.jpg";
 import Link from "next/link";
 
 const BlogGrid = ({
@@ -29,7 +29,7 @@ const BlogGrid = ({
         "Link salmon cherry salmon combtail gourami frigate mackerel snake mackerel....",
       image: Blog1,
       category: "Logistic",
-      categoryColor: "bg-amber-400",
+  categoryColor: "bg-[#39C0C8]",
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ const BlogGrid = ({
         "Frigate mackerel snake mackerel upside-down catfish finback cat shark. Halo...",
       image: Blog2,
       category: "Transport",
-      categoryColor: "bg-amber-400",
+  categoryColor: "bg-[#39C0C8]",
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ const BlogGrid = ({
         "Reedfish bonefish trahira bristlenose catfish, longnose. Frigate mackerel s...",
       image: Blog3,
       category: "Shipping",
-      categoryColor: "bg-amber-400",
+  categoryColor: "bg-[#39C0C8]",
     },
     {
       id: 4,
@@ -226,7 +226,7 @@ const BlogGrid = ({
                       <span className="relative z-10 font-semibold group-hover:text-white">
                         See all posts
                       </span>
-                      <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-amber-400 text-gray-900">
+                      <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#39C0C8] text-gray-900">
                         <FiArrowUpRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]" />
                       </span>
                     </Link>

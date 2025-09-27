@@ -42,7 +42,7 @@ const FAQ = ({ faqs }) => {
                     </span>
                     <span
                       className={`h-6 w-6 flex items-center justify-center rounded-full text-xs font-medium transition-colors ${
-                        isOpen ? "bg-amber-400 text-gray-900" : "bg-gray-900 text-white"
+                        isOpen ? "bg-[#39C0C8] text-gray-900" : "bg-gray-900 text-white"
                       }`}
                     >
                       {isOpen ? "-" : "+"}

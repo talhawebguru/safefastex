@@ -6,22 +6,22 @@ import { FaTruck, FaShip, FaTrain, FaPlane } from "react-icons/fa";
 
 const highlights = [
   {
-    icon: <FaTruck className="text-amber-400 h-8 w-8" />,
+  icon: <FaTruck className="text-[#39C0C8] h-8 w-8" />,
     title: "Road Freight",
     description: "Efficient and reliable trucking solutions for all cargo sizes, with real-time tracking and flexible routes.",
   },
   {
-    icon: <FaShip className="text-amber-400 h-8 w-8" />,
+  icon: <FaShip className="text-[#39C0C8] h-8 w-8" />,
     title: "Ship Freight",
     description: "Global shipping with secure container handling, customs support, and competitive rates.",
   },
   {
-    icon: <FaTrain className="text-amber-400 h-8 w-8" />,
+  icon: <FaTrain className="text-[#39C0C8] h-8 w-8" />,
     title: "Train Freight",
     description: "Cost-effective rail transport for bulk goods, offering speed and sustainability across regions.",
   },
   {
-    icon: <FaPlane className="text-amber-400 h-8 w-8" />,
+  icon: <FaPlane className="text-[#39C0C8] h-8 w-8" />,
     title: "Air Freight",
     description: "Fast, priority air cargo for urgent shipments, with end-to-end logistics and insurance options.",
   },

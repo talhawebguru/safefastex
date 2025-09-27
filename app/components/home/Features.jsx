@@ -153,7 +153,7 @@ const Features = () => {
                         <div
                           className={`w-3 h-3 sm:w-3.5 sm:h-3.5 transition-colors ${
                             activeFeature === index
-                              ? "bg-amber-400"
+                              ? "bg-[#39C0C8]"
                               : "bg-neutral-900"
                           }`}
                         />
@@ -199,7 +199,7 @@ const Features = () => {
                     <span className="relative z-10 font-semibold group-hover:text-white">
                       Explore More
                     </span>
-                    <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-amber-400 text-gray-900">
+                    <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#39C0C8] text-gray-900">
                       <FiArrowUpRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]" />
                     </span>
                   </Link>

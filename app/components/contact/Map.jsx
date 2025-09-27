@@ -33,7 +33,7 @@ const Map = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
-            className="bg-amber-400 rounded-full p-3 shadow-lg"
+            className="bg-[#39C0C8] rounded-full p-3 shadow-lg"
           >
             <div className="w-6 h-6 bg-gray-900 rounded-full flex items-center justify-center">
               <div className="w-3 h-3 bg-white rounded-full"></div>
@@ -63,7 +63,7 @@ const Map = () => {
               <p className="text-neutral-900 text-sm font-medium font-['Manrope']">
                 Call Center
               </p>
-              <p className="text-amber-500 text-sm font-semibold font-['Manrope']">
+              <p className="text-[#39C0C8] text-sm font-semibold font-['Manrope']">
                 +1 800 100 900 234
               </p>
             </div>

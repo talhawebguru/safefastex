@@ -43,13 +43,13 @@ const RelatedServices = ({ related }) => {
                 <h3 className="text-lg font-semibold text-gray-900 group-hover:text-gray-900">
                   {r.title}
                 </h3>
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-amber-400 text-gray-900">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#39C0C8] text-gray-900">
                   <FiArrowUpRight className="h-5 w-5" />
                 </span>
               </div>
               <Link
                 href={r.href}
-                className="absolute inset-0 rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60"
+                className="absolute inset-0 rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#39C0C8]/60"
                 aria-label={`Read more about ${r.title}`}
               />
             </motion.div>

@@ -39,11 +39,11 @@ const ArticleBody = ({ blocks = [] }) => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.4 }}
-              className="relative pl-14 pr-4 py-6 bg-amber-50/40 rounded-2xl border border-amber-100"
+              className="relative pl-14 pr-4 py-6 bg-[#39C0C8]/5 rounded-2xl border border-[#39C0C8]/20"
             >
               <span className="absolute left-6 top-6 flex space-x-1">
                 <span className="w-3 h-3 rounded-sm bg-zinc-800" />
-                <span className="w-3 h-3 rounded-sm bg-amber-400" />
+                <span className="w-3 h-3 rounded-sm bg-[#39C0C8]" />
               </span>
               <p className="text-zinc-800 text-sm md:text-[15px] font-normal font-['Manrope'] leading-[1.85] tracking-tight">
                 {block.content}

@@ -17,7 +17,7 @@ const MarqueeText = ({
         <span className="text-neutral-900 text-4xl sm:text-6xl md:text-7xl  font-bold font-['Space_Grotesk'] uppercase leading-[1.1] tracking-[-0.03em]">
         The Best 
       </span>
-      <span className="text-amber-400 text-4xl sm:text-6xl md:text-7xl font-bold font-['Space_Grotesk'] uppercase leading-[1.1] tracking-[-0.03em]">
+  <span className="text-[#39C0C8] text-4xl sm:text-6xl md:text-7xl font-bold font-['Space_Grotesk'] uppercase leading-[1.1] tracking-[-0.03em]">
          transportation
       </span>
       <span className="text-neutral-900 text-4xl sm:text-6xl md:text-7xl font-bold font-['Space_Grotesk'] uppercase leading-[1.1] tracking-[-0.03em]">

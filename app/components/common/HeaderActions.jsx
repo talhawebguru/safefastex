@@ -14,7 +14,7 @@ const HeaderActions = ({ onMobileMenuToggle }) => {
       <div className="hidden lg:flex items-center">
         <Link
           href="/contacts"
-          className="px-6 py-3 rounded-2xl bg-amber-400 text-gray-900 font-semibold shadow-sm hover:bg-amber-300 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60"
+          className="px-6 py-3 rounded-2xl bg-[#39C0C8] text-gray-900 font-semibold shadow-sm hover:bg-[#2EA6AD] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#39C0C8]/60"
         >
           Get a quote
         </Link>

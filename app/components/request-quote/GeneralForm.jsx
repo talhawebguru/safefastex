@@ -511,7 +511,7 @@ const GeneralForm = () => {
                     <span className="relative z-10 font-semibold group-hover:text-white">
                       Get a Quote
                     </span>
-                    <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-amber-400 text-gray-900">
+                    <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#39C0C8] text-gray-900">
                       <FiArrowUpRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]" />
                     </span>
                   </button>
@@ -524,7 +524,7 @@ const GeneralForm = () => {
           <div className="xl:col-span-4">
             <motion.div
               variants={itemVariants}
-              className="bg-amber-400 rounded-3xl p-8 lg:p-10 flex flex-col justify-between sticky top-28"
+              className="bg-[#39C0C8] rounded-3xl p-8 lg:p-10 flex flex-col justify-between sticky top-28"
             >
               <div>
                 <h3 className="text-neutral-900 text-3xl font-semibold font-['Manrope'] leading-10 mb-6">
@@ -554,7 +554,7 @@ const GeneralForm = () => {
                   <span className="relative z-10 font-semibold group-hover:text-white">
                     Contact Us
                   </span>
-                  <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-amber-400 text-gray-900">
+                  <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#39C0C8] text-gray-900">
                     <FiArrowUpRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]" />
                   </span>
                 </button>

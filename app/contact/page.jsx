@@ -97,25 +97,25 @@ const page = () => {
                     <div className="flex space-x-4">
                       <a 
                         href="#" 
-                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-amber-400 hover:text-neutral-900 transition-colors"
+                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-[#39C0C8] hover:text-neutral-900 transition-colors"
                       >
                         f
                       </a>
                       <a 
                         href="#" 
-                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-amber-400 hover:text-neutral-900 transition-colors"
+                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-[#39C0C8] hover:text-neutral-900 transition-colors"
                       >
                         t
                       </a>
                       <a 
                         href="#" 
-                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-amber-400 hover:text-neutral-900 transition-colors"
+                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-[#39C0C8] hover:text-neutral-900 transition-colors"
                       >
                         in
                       </a>
                       <a 
                         href="#" 
-                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-amber-400 hover:text-neutral-900 transition-colors"
+                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-[#39C0C8] hover:text-neutral-900 transition-colors"
                       >
                         ig
                       </a>

@@ -7,7 +7,7 @@ export const blogPosts = [
     title: 'Transportation services in Los Angeles region',
     excerpt: 'Triggerfish bluntnose knifefish upside‑down catfish cobia spookfish convict cichlid.',
     category: 'Logistic',
-    categoryColor: 'bg-amber-400',
+  categoryColor: 'bg-[#39C0C8]',
     author: 'Din Parker',
     authorAvatar: '/images/author-placeholder.png',
     date: 'May, 27 / 2024',
