@@ -13,33 +13,39 @@ const Features = () => {
   const features = [
     {
       id: 1,
-      title: "01. Transparent pricing",
+      title: "01. Transparent Pricing",
       description:
-        "Pacific hake false trevally queen parrotfish black prickleback moss hake false trevally queen parrotfish black prichake false trevally queen parrotfish black prickleback mosskleback moss",
+        "Clear quotes, no hidden fees. Know exactly what you pay for every shipment.",
     },
     {
       id: 2,
-      title: "02. Warehouse storage",
+      title: "02. Mobile Shipment Tracking",
       description:
-        "Comprehensive storage solutions with climate control and security monitoring for all your cargo needs.",
+        "Real-time visibility for every shipment, from pickup to delivery, via our online portal.",
     },
     {
       id: 3,
-      title: "03. Real time tracking",
+      title: "03. Secure Handling",
       description:
-        "Track your shipments in real-time with our advanced GPS and monitoring systems.",
+        "Careful management of valuable and sensitive cargo, including cold chain and project cargo.",
     },
     {
       id: 4,
-      title: "04. Security for cargo",
+      title: "04. Global Reach",
       description:
-        "State-of-the-art security measures to protect your valuable shipments throughout transit.",
+        "International and local delivery, door-to-door, with customs clearance and warehousing support.",
     },
     {
       id: 5,
-      title: "05. Easy payment method",
+      title: "05. 24/7 Support",
       description:
-        "Multiple payment options and flexible payment terms to suit your business needs.",
+        "Dedicated team available around the clock to answer your questions and resolve issues.",
+    },
+    {
+      id: 6,
+      title: "06. Warehousing & Storage",
+      description:
+        "Safe, climate-controlled facilities for all goods, with flexible storage options.",
     },
   ];
 
@@ -111,41 +117,17 @@ const Features = () => {
                 / features /
               </motion.div>
 
-              {/* Hero Text */}
+              {/* Section Heading */}
               <motion.div
                 variants={containerVariants}
                 className="space-y-1 sm:space-y-2"
               >
-                <motion.div
+                <motion.h2
                   variants={wordVariants}
-                  className="flex flex-wrap items-center gap-x-2 sm:gap-x-4 gap-y-1 sm:gap-y-2"
+                  className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight"
                 >
-                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                    Unusual
-                  </span>
-                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                    things
-                  </span>
-                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                    we
-                  </span>
-                </motion.div>
-                <motion.div
-                  variants={wordVariants}
-                  className="flex flex-wrap items-center gap-x-2 sm:gap-x-4 gap-y-1 sm:gap-y-2"
-                >
-                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                    do
-                  </span>
-                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                    work
-                  </span>
-                </motion.div>
-                <motion.div variants={wordVariants}>
-                  <span className="text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
-                    efficiency
-                  </span>
-                </motion.div>
+                  Why Choose SafeFastEx?
+                </motion.h2>
               </motion.div>
 
               {/* Features List */}

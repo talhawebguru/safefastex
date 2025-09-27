@@ -7,6 +7,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import TruckIcon from "@/public/images/truck.png";
 import ShipIcon from "@/public/images/ship.png";
 import TrainIcon from "@/public/images/train.png";
+import AirplaneIcon from "@/public/images/air.png";
 import Image from "next/image";
 
 const Services = () => {
@@ -14,7 +15,7 @@ const Services = () => {
     <section className="py-8 sm:py-12 lg:py-16 xl:py-20 overflow-x-hidden relative">
       {/* Dotted map background pattern */}
       <div 
-        className="absolute inset-0 opacity-10"
+        className="absolute inset-0 opacity-10 -z-10"
         style={{
           backgroundImage: `radial-gradient(circle, #333333 1px, transparent 1px)`,
           backgroundSize: '20px 20px',
@@ -42,7 +43,7 @@ const Services = () => {
               transition={{ duration: 0.4, ease: "easeOut", delay: 0.1 }}
               className="text-3xl font-spaceGrotesk sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-gray-900 leading-tight uppercase mb-8"
             >
-              Transportation services which we provide to our customers
+              Comprehensive Transportation Services
             </motion.h2>
             
             <motion.div
@@ -74,8 +75,8 @@ const Services = () => {
           <div>
             <ServiceItem
               image={TruckIcon}
-              title="Truck Freight"
-              description="Pacific hake false trevally queen parrotfish black prickleback moss"
+              title="Road Freight"
+              description="Reliable trucking across the UAE and GCC, with real-time tracking and secure handling."
               href="/services/road-freight"
               delay={0.1}
             />
@@ -89,9 +90,9 @@ const Services = () => {
             />
             
             <ServiceItem
-              image={ShipIcon}
+              image={TrainIcon}
               title="Ship Freight"
-              description="Pacific hake false trevally queen parrotfish black prickleback moss"
+              description="Efficient ocean freight for global cargo, including FCL, LCL, and project logistics."
               href="/services/ship-freight"
               delay={0.2}
             />
@@ -105,10 +106,10 @@ const Services = () => {
             />
             
             <ServiceItem
-              image={TrainIcon}
-              title="Train Freight"
-              description="Pacific hake false trevally queen parrotfish black prickleback moss"
-              href="/services/train-freight"
+              image={AirplaneIcon}
+              title="Air Freight"
+              description="Fast and reliable air freight services for time-sensitive shipments."
+              href="/services/air-freight"
               delay={0.3}
             />
           </div>
@@ -155,7 +156,7 @@ const ServiceItem = ({ image, title, description, href, delay }) => {
     >
       <div className="flex-shrink-0">
         <div className="flex items-center justify-center">
-            <Image src={image} alt={title} className=" object-contain" />
+            <Image src={image} alt={title} className="object-contain w-28" />
         </div>
       </div>
       <div className="flex-1">
