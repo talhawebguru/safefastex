@@ -1,0 +1,39 @@
+User-agent: *
+
+# Block internal search results and query parameters
+Disallow: /search
+Disallow: /*?q=
+Disallow: /*?page=
+
+# Block non-essential areas (not present, but future-proof)
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /login/
+Disallow: /register/
+Disallow: /wishlist/
+Disallow: /account/
+
+# Allow essential core pages
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /services
+Allow: /blog
+Allow: /request-quote
+Allow: /privacy
+Allow: /terms
+Allow: /environmental-policy
+
+# Allow all service detail pages
+Allow: /services/air-freight
+Allow: /services/ship-freight
+Allow: /services/road-freight
+Allow: /services/warehousing-storage
+Allow: /services/customs-clearance
+Allow: /services/cold-chain
+Allow: /services/project-cargo
+Allow: /services/door-to-door
+
+# Sitemap location
+Sitemap: https://safefastex.com/sitemap.xml

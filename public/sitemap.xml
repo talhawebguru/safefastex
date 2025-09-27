@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://safefastex.com/</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://safefastex.com/images/logo.png</image:loc>
+      <image:title>SafeFastEx Global Logistics Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://safefastex.com/images/features.png</image:loc>
+      <image:title>SafeFastEx Features</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://safefastex.com/about</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://safefastex.com/contact</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://safefastex.com/services</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://safefastex.com/blog</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safefastex.com/request-quote</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://safefastex.com/privacy</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://safefastex.com/terms</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://safefastex.com/environmental-policy</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- Service Detail Pages -->
+  <url>
+    <loc>https://safefastex.com/services/air-freight</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://safefastex.com/images/air-freight-hero.jpg</image:loc>
+      <image:title>Air Freight Service</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://safefastex.com/services/ship-freight</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://safefastex.com/images/ship-freight-hero.jpg</image:loc>
+      <image:title>Ship Freight Service</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://safefastex.com/services/road-freight</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://safefastex.com/images/road-freight-hero.jpg</image:loc>
+      <image:title>Road Freight Service</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://safefastex.com/services/warehousing-storage</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://safefastex.com/images/warehousing-hero.jpg</image:loc>
+      <image:title>Warehousing & Storage Service</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://safefastex.com/services/customs-clearance</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://safefastex.com/images/customs-hero.jpg</image:loc>
+      <image:title>Customs Clearance Service</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://safefastex.com/services/cold-chain</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://safefastex.com/images/cold-chain-hero.jpg</image:loc>
+      <image:title>Cold Chain Logistics Service</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://safefastex.com/services/project-cargo</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://safefastex.com/images/project-cargo-hero.jpg</image:loc>
+      <image:title>Project Cargo Service</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://safefastex.com/services/door-to-door</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://safefastex.com/images/door-to-door-hero.jpg</image:loc>
+      <image:title>Door-to-Door Delivery Service</image:title>
+    </image:image>
+  </url>
+</urlset>
