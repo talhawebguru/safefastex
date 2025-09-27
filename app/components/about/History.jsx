@@ -15,38 +15,43 @@ const History = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   // Timeline data - 5 items as per reference
-  const timelineData = [
-    {
-      period: "2004 - 2007",
-      title: "Killifish emperor bream",
-      description: "Pacific hake false trevally queen parrotfish black prickleback moss. Pacific hake false trevally queen parrotfish black prickleback moss.",
-      hasTopBorder: true
-    },
-    {
-      period: "2007 - 2012", 
-      title: "Pollock Sacramento blackfish",
-      description: 'Triggerfish bluntnose knifefish upside-down catfish cobia spookfish convict cichlid, "cat shark; saw shark trout cod."',
-      hasTopBorder: true
-    },
-    {
-      period: "2012 - 2018",
-      title: "Triggerfish bluntnose knifefish", 
-      description: "Halosaur duckbilled barracudina, goosefish gar pleco, chum salmon armoured catfish gudgeon sawfish whitefish orbicular batfish mummichog paradise fish!",
-      hasTopBorder: true
-    },
-    {
-      period: "2018 - 2020",
-      title: "Halosaur duckbilled barracudina",
-      description: "Pacific hake false trevally queen parrotfish black prickleback moss. Pacific hake false trevally queen parrotfish black prickleback moss.",
-      hasTopBorder: true
-    },
-    {
-      period: "2020 - 2023",
-      title: "Pacific hake false trevally queen",
-      description: 'Triggerfish bluntnose knifefish upside-down catfish cobia spookfish convict cichlid, "cat shark; saw shark trout cod."',
-      hasTopBorder: true
-    }
-  ];
+    const timelineData = [
+      {
+        period: "2004 – 2007",
+        title: "SafeFastEx was founded in Sharjah, UAE",
+        description:
+          "SafeFastEx was founded in Sharjah, UAE, with a mission to simplify freight forwarding. In these early years, we focused on building strong foundations in air and sea freight, ensuring clients experienced smooth and cost-effective transport solutions.",
+        hasTopBorder: true,
+      },
+      {
+        period: "2007 – 2012",
+        title: "Expansion across the GCC",
+        description:
+          "As trade in the GCC expanded, we grew our network across Dubai, Abu Dhabi, and other emirates. We introduced road freight solutions and bonded warehousing, making it easier for businesses to manage their supply chains within and beyond UAE.",
+        hasTopBorder: true,
+      },
+      {
+        period: "2012 – 2018",
+        title: "Technology-driven transformation",
+        description:
+          "This was the period of transformation. SafeFastEx invested in technology-driven logistics, introducing live GPS tracking, cold chain management, and temperature-controlled storage facilities to meet the demands of pharmaceutical, food, and medical sectors.",
+        hasTopBorder: true,
+      },
+      {
+        period: "2018 – 2024",
+        title: "Global partnerships & digitalization",
+        description:
+          "During this phase, SafeFastEx expanded its global partnerships and built a GDP-compliant logistics network. We integrated digital shipment tracking dashboards, strengthened our project cargo capabilities, and enhanced pharma logistics solutions to support critical industries worldwide.",
+        hasTopBorder: true,
+      },
+      {
+        period: "2024 – Present",
+        title: "Smart, sustainable logistics leadership",
+        description:
+          "Today, SafeFastEx continues to lead the way as a smart logistics and supply chain partner. With advanced AI-driven tracking systems, IoT-enabled cold chain monitoring, and sustainable freight practices, we ensure businesses achieve faster deliveries, reduced costs, and environmentally responsible logistics across the UAE, GCC, and beyond.",
+        hasTopBorder: true,
+      },
+    ];
 
   const containerVariants = {
     hidden: { opacity: 0 },

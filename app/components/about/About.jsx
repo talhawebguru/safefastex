@@ -128,10 +128,10 @@ const About = () => {
             <div className="lg:col-span-7 xl:col-span-6">
               <motion.div variants={headingVariants}>
                 <h1 className="text-neutral-900 text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-medium font-['Space_Grotesk'] uppercase leading-[1.1] tracking-[-0.02em] space-y-1">
-                  <span className="block">Logico is the best</span>
-                  <span className="block">Transportation</span>
+                  <span className="block">About US</span>
+                  {/* <span className="block">Transportation</span>
                   <span className="block">company in our</span>
-                  <span className="block">state</span>
+                  <span className="block">state</span> */}
                 </h1>
               </motion.div>
             </div>
@@ -144,34 +144,12 @@ const About = () => {
               >
                 {/* First Paragraph - Bold */}
                 <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-bold font-manrope leading-relaxed">
-                  Halosaur duckbilled barracudina, goosefish gar pleco, chum
-                  salmon armoured catfish gudgeon sawfish whitefish orbicular
-                  batfish
+                  SafeFastEx is a leading logistics and freight forwarding company based in Sharjah, UAE, delivering reliable global supply chain solutions since 2000. With expertise in air, sea, and road freight, customs clearance, warehousing, and cold chain logistics, we help businesses move goods with speed, security, and confidence.
                 </p>
 
                 {/* Second Paragraph - Regular */}
                 <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-normal font-manrope leading-relaxed">
-                  mummichog paradise fish!
-                </p>
-
-                {/* Third Paragraph - Regular */}
-                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-normal font-manrope leading-relaxed">
-                  Triggerfish bluntnose knifefish upside-down catfish cobia
-                  spookfish convict cichlid, cat shark saw shark trout cod."
-                  Pacific hake false trevally queen parrotfish black prickleback
-                  moss. Pacific hake false trevally queen parrotfish black
-                  prickleback moss Halosaur duckbilled barracudina, goosefish
-                  gar pleco, chum salmon armoured catfish gudgeon sawfish
-                  whitefish orbicular batfish mummichog paradise fish!
-                </p>
-
-                {/* Fourth Paragraph - Regular */}
-                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-normal font-manrope leading-relaxed">
-                  Triggerfish bluntnose knifefish upside-down catfish cobia
-                  spookfish convict cichlid, "cat shark; saw shark trout cod."
-                  Pacific hake false trevally queen parrotfish black prickleback
-                  moss. Pacific hake false trevally queen parrotfish black
-                  prickleback moss
+                  Our goal is simple: to connect businesses and markets with seamless logistics, powered by transparency, technology, and 24/7 customer support.
                 </p>
               </motion.div>
             </div>
