@@ -87,7 +87,7 @@ const Services = () => {
         }}
       />
       <Container>
-        <div className="max-w-3xl mb-12 lg:mb-16">
+        <div className="max-w-4xl mb-12 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 6 }}
             whileInView={{ opacity: 1, y: 0 }}

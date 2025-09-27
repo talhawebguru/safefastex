@@ -22,23 +22,30 @@ const Testimonial = () => {
     {
       id: 1,
       quote:
-        'Halosaur duckbilled barracudina, goosefish gar pleco, chum salmon armoured catfish gudgeon sawfish whitefish orbicular batfish mummichog paradise fish! Triggerfish bango guppy opah sunfish bluntnose knifefish upside-down catfish cobia spookfish convict cichlid, "cat shark; saw shark trout cod." Pink salmon cherry salmon combtail gourami frigate mackerel snake mackerel upside-down shark',
-      name: "Adrian Mitchel",
-      company: "SolarInc",
+        "SafeFastEx has been our logistics partner for more than two years, and their consistency continues to impress us. They handle every shipment with professionalism, ensuring timely delivery and careful documentation. Their team is always available to support us, making the whole process stress-free. Thanks to SafeFastEx, we have been able to expand our customer base internationally with complete confidence.",
+      author: "Ahmed Khan",
+      location: "Dubai, UAE",
     },
     {
       id: 2,
       quote:
-        "Pacific hake false trevally queen parrotfish black prickleback mosshead warbonnet sweeper! Greenling sleeper, brotula sea lamprey. Yellowtail snapper, yellow tang yellowtail clownfish triggerfısh, grunt sculpin: starfish. Wahoo red snapper that's dentist! Barb Spanish mackerel; jewelfish king of herring opaleye tompot blenny.",
-      name: "Sarah Johnson",
-      company: "LogiTech",
+        "Our business deals with sensitive medical equipment that requires temperature-controlled logistics. SafeFastEx not only provided reliable cold chain solutions but also ensured that our shipments arrived safely without any delays. Their tracking system gave us full visibility at every step, and their staff was always available to answer our questions. We feel secure knowing that SafeFastEx is handling our critical deliveries.",
+      author: "Dr. Sarah Al-Mutairi",
+      location: "Riyadh, KSA",
     },
     {
       id: 3,
       quote:
-        "Frigate mackerel snake mackerel upside-down catfish finback cat shark. Hello central mudminnow spiny eel jewel tetra sprat zebra danio. Bicolor goatfish yellowtail scad. Red velvetfish yellowfin crocodile shark cookie cutter shark bigeye squaretail nursehound. Longfin smelt glowlight danio, cisco blackchin kingfish.",
-      name: "Michael Chen",
-      company: "FreightCorp",
+        "Importing and exporting goods can be complicated, but SafeFastEx made the process seamless for our company. Their customs clearance service was handled with precision, saving us valuable time and avoiding costly delays. The team was transparent, proactive, and kept us informed at every stage. We appreciate their expertise and reliability, which has helped us focus on growing our business.",
+      author: "Ravi Patel",
+      location: "Sharjah, UAE",
+    },
+    {
+      id: 4,
+      quote:
+        "We recently needed to transport oversized industrial machinery, and SafeFastEx managed the entire operation flawlessly. From planning the route to securing the cargo and handling the final delivery, everything was executed with care and efficiency. Their attention to detail and safety measures gave us complete peace of mind. We highly recommend them for any large or complex logistics projects.",
+      author: "Michael Johnson",
+      location: "Abu Dhabi, UAE",
     },
   ];
 
@@ -75,11 +82,21 @@ const Testimonial = () => {
     <section className="py-8 sm:py-12 lg:py-16 xl:py-20 overflow-x-hidden">
       <Container>
         <motion.div
-          variants={itemVariants}
-          className="text-black text-sm font-normal font-['Manrope'] leading-loose"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="text-brand text-sm font-medium mb-4 tracking-wide"
         >
-          / Testimonial /
+          / testimonials /
         </motion.div>
+        <motion.h2
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+          className="text-3xl text-center text-brand font-spaceGrotesk sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-gray-900 leading-tight mb-10"
+        >
+          What Our Clients Say
+        </motion.h2>
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -126,17 +143,16 @@ const Testimonial = () => {
                       {/* Quote Text */}
                       <div className="space-y-6">
                         <blockquote className="text-zinc-800 text-lg sm:text-xl font-normal font-['Manrope'] leading-8 sm:leading-10">
-                          "{testimonial.quote}"
+                          “{testimonial.quote}”
                         </blockquote>
                       </div>
-
                       {/* Author Info */}
                       <div className="space-y-1">
                         <div className="text-zinc-800 text-base font-bold font-['Manrope'] leading-tight">
-                          {testimonial.name}
+                          {testimonial.author}
                         </div>
-                        <div className="text-zinc-800 text-sm font-bold font-['Manrope'] leading-tight">
-                          {testimonial.company}
+                        <div className="text-zinc-800 text-sm font-medium font-['Manrope'] leading-tight">
+                          {testimonial.location}
                         </div>
                       </div>
                     </motion.div>
