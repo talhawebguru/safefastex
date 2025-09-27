@@ -5,11 +5,11 @@ import Link from "next/link";
 import Container from "../common/Container";
 
 const NameBanner = ({ 
-  title = "About Logico",
+  title = "About SafeFastEx",
   backgroundImage = "/images/nameBanner.jpg",
   breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "About Logico", href: null }
+    { label: "About SafeFastEx", href: null }
   ]
 }) => {
   const containerVariants = {

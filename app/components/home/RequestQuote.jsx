@@ -259,7 +259,7 @@ const RequestQuote = () => {
                 >
                   <Link
                     href="/about-us"
-                    className="group relative inline-flex items-center rounded-2xl border border-[#39C0C8] text-black pl-4 sm:pl-6 pr-1 py-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#39C0C8]/60"
+                    className="group relative inline-flex items-center rounded-2xl border border-[#39C0C8] text-black pl-4 sm:pl-6 pr-1 py-2.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#39C0C8]/60 cursor-pointer"
                   >
                     <span
                       aria-hidden
@@ -287,18 +287,17 @@ const RequestQuote = () => {
                 className="text-white"
               >
                 <div className="text-xs sm:text-sm font-medium text-white/70 mb-4 sm:mb-6">
-                  / quote /
+                  / request a quote /
                 </div>
 
                 <div className="mb-6 sm:mb-8">
                   <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
-                    Provide quick Tracking your cargo
+                    Get a Quick & Hassle-Free Quote
                   </div>
                 </div>
 
                 <p className="text-white text-sm sm:text-base leading-6 sm:leading-8 max-w-lg">
-                  Pacific hake false trevally queen parrotfish black prickleback
-                  mosshead warbonnet sweeper! Greenling sleeper.
+                  Tell us about your shipment, and our logistics experts will get back to you with a tailored solution. Whether it’s air, sea, or road freight, SafeFastEx ensures competitive pricing, fast handling, and secure delivery.
                 </p>
               </motion.div>
               
@@ -322,9 +321,12 @@ const RequestQuote = () => {
                     <div className="text-gray-900 text-sm sm:text-base mb-1 sm:mb-2">
                       Call us today
                     </div>
-                    <div className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-bold">
-                      800 100 678 10 95
-                    </div>
+                    <a
+                      href="tel:0527042536"
+                      className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold cursor-pointer hover:underline focus:outline-none"
+                    >
+                      +971-52-704-2536
+                    </a>
                   </div>
                 </div>
               </motion.div>

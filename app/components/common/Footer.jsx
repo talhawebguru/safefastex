@@ -67,10 +67,10 @@ const Footer = () => {
               </motion.div>
 
               {/* Hero Text */}
-              <motion.div variants={containerVariants} className="space-y-2">
+              <motion.div variants={containerVariants} className="">
                 <motion.div
                   variants={wordVariants}
-                  className="flex flex-wrap items-center gap-x-4 gap-y-2"
+                  className="flex flex-wrap items-center gap-x-4"
                 >
                   <span className="text-white text-4xl sm:text-5xl lg:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
                     We
@@ -84,7 +84,7 @@ const Footer = () => {
                 </motion.div>
                 <motion.div
                   variants={wordVariants}
-                  className="flex flex-wrap items-center gap-x-4 gap-y-2"
+                  className="flex flex-wrap items-center gap-x-4"
                 >
                   <span className="text-white text-4xl sm:text-5xl lg:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
                     ready to
@@ -98,7 +98,7 @@ const Footer = () => {
                 </motion.div>
                 <motion.div
                   variants={wordVariants}
-                  className="flex flex-wrap items-center gap-x-4 gap-y-2"
+                  className="flex flex-wrap items-center gap-x-4"
                 >
                   <span className="text-white text-4xl sm:text-5xl lg:text-6xl font-medium font-['Space_Grotesk'] uppercase leading-tight">
                     and
@@ -508,13 +508,14 @@ const Footer = () => {
           >
             <div className="flex items-center gap-2 text-stone-300 text-sm font-normal font-manrope leading-loose">
               <span>©</span>
-              <a
-                href="#"
+              2025
+              <Link
+                href="/"
                 className="underline hover:text-white transition-colors"
               >
-                SafeFastEx
-              </a>
-              <span>2025. All rights reserved.</span>
+                SafeFastEx.
+              </Link>
+              <span>All Rights Reserved.</span>
             </div>
 
             <div className="flex items-center gap-4 text-stone-300 text-sm font-normal font-manrope leading-loose">
