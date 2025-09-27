@@ -15,37 +15,43 @@ const Features = () => {
       id: 1,
       title: "01. Transparent Pricing",
       description:
-        "Clear quotes, no hidden fees. Know exactly what you pay for every shipment.",
+        "No hidden fees or surprise charges. With SafeFastEx, you get upfront, competitive pricing with complete visibility before every shipment.",
     },
     {
       id: 2,
-      title: "02. Mobile Shipment Tracking",
+      title: "02. Live GPS Truck Tracking",
       description:
-        "Real-time visibility for every shipment, from pickup to delivery, via our online portal.",
+        "Track your cargo in real time with our GPS-enabled fleet. From departure to arrival, you always know where your shipment is.",
     },
     {
       id: 3,
-      title: "03. Secure Handling",
+      title: "03. Cold Chain Management System",
       description:
-        "Careful management of valuable and sensitive cargo, including cold chain and project cargo.",
+        "Specialized solutions for medical, pharmaceutical, and perishable goods. Our temperature-controlled logistics ensure your sensitive cargo remains within required conditions throughout transit.",
     },
     {
       id: 4,
-      title: "04. Global Reach",
+      title: "04. Temperature Control & Alarms",
       description:
-        "International and local delivery, door-to-door, with customs clearance and warehousing support.",
+        "Advanced monitoring systems provide live temperature readings. In case of fluctuations, automated alarms alert our team instantly to take corrective action.",
     },
     {
       id: 5,
-      title: "05. 24/7 Support",
+      title: "05. Global Reach with Local Expertise",
       description:
-        "Dedicated team available around the clock to answer your questions and resolve issues.",
+        "From the UAE to anywhere in the world, our international network and strong local presence guarantee smooth and reliable deliveries.",
     },
     {
       id: 6,
-      title: "06. Warehousing & Storage",
+      title: "06. 24/7 Expert Support",
       description:
-        "Safe, climate-controlled facilities for all goods, with flexible storage options.",
+        "Our support team is available around the clock to answer your questions, provide updates, and resolve issues quickly.",
+    },
+    {
+      id: 7,
+      title: "07. Secure Handling & Warehousing",
+      description:
+        "Every shipment is handled with care, supported by secure warehousing, packaging, and quick dispatch for maximum efficiency.",
     },
   ];
 
