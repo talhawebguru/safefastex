@@ -37,31 +37,31 @@ const servicesData = [
   {
     title: "Warehousing & Storage",
     description: "Secure facilities with packaging and inventory management.",
-    href: "/services",
+    href: "/services/warehousing-storage",
     Icon: FaWarehouse,
   },
   {
     title: "Customs Clearance",
     description: "Smooth import/export clearance and documentation.",
-    href: "/services",
+    href: "/services/customs-clearance",
     Icon: FaFileInvoice,
   },
   {
     title: "Cold Chain & Medical Shipments",
     description: "Specialized handling for pharmaceuticals and perishables.",
-    href: "/services",
+    href: "/services/cold-chain",
     Icon: FaSnowflake,
   },
   {
     title: "Project & Heavy Cargo",
     description: "Expertise in oversized, breakbulk, and industrial shipments.",
-    href: "/services",
+    href: "/services/project-cargo",
     Icon: FaCogs,
   },
   {
     title: "Door-to-Door Delivery",
     description: "Hassle-free pickup and delivery at your doorstep.",
-    href: "/services",
+    href: "/services/door-to-door",
     Icon: FaDoorOpen,
   },
 ];
@@ -177,10 +177,11 @@ const ServiceCard = ({ service, index }) => {
         aria-label={title}
         className="group block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900 rounded-2xl"
       >
-        <div className="relative h-full p-6 xl:p-7 rounded-2xl bg-white border border-gray-200 hover:border-gray-900 shadow-sm hover:shadow-xl transition-all duration-300">
+        <div className="relative h-full p-6 xl:p-7 rounded-2xl bg-white border border-gray-200 hover:border-[#39C0C8] shadow-sm hover:shadow-xl transition-all duration-300">
           <div className="flex items-start gap-4">
-            <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gray-900 text-white ring-1 ring-gray-900/10 shadow-sm group-hover:bg-[#39C0C8] group-hover:text-gray-900 transition-colors duration-300">
-              <Icon className="h-7 w-7" aria-hidden="true" />
+            <div className="relative flex h-14 w-14 items-center justify-center rounded-xl bg-[#39C0C8]/15 text-gray-900 ring-1 ring-[#39C0C8]/40 shadow-sm transition-all duration-300 group-hover:bg-[#39C0C8] group-hover:text-white group-hover:shadow-lg">
+              <Icon className="h-8 w-8" aria-hidden="true" />
+              <span className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-transparent group-hover:ring-white/50 transition-colors duration-300" />
             </div>
             <div className="flex-1">
               <h3 className="text-lg font-semibold text-gray-900 leading-snug mb-2 group-hover:text-gray-900">

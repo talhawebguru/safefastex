@@ -15,6 +15,7 @@ import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -117,11 +118,13 @@ const Footer = () => {
               {/* Description */}
               <motion.p
                 variants={itemVariants}
-                className="text-neutral-200 text-base sm:text-lg font-normal font-manrope leading-loose max-w-md"
+                className="text-neutral-200 text-base sm:text-lg font-normal font-manrope leading-loose"
               >
-                Pacific hake false trevally queen parrotfish black prickleback
-                <br />
-                mosshead warbonnet sweeper! Greenling sleeper.
+                At SafeFastEx, we are always ready to assist you with all your
+                logistics, freight forwarding, and cold chain shipping
+                requirements. Whether you need real-time shipment tracking,
+                temperature-controlled transport, or global delivery solutions,
+                our expert team is here to help.
               </motion.p>
 
               {/* Contact Information Grid */}
@@ -136,16 +139,16 @@ const Footer = () => {
                   </h4>
                   <div className="space-y-1">
                     <a
-                      href="tel:+18001009752034"
+                      href="tel:+971527042536"
                       className="block text-white text-base font-normal font-manrope underline leading-7 hover:text-neutral-200 transition-colors"
                     >
-                      + 1-800 100 975 20 34
+                      +971-52-704-2536
                     </a>
                     <a
-                      href="tel:+12318002345678"
+                      href="tel:+97125067345"
                       className="block text-white text-base font-normal font-manrope underline leading-7 hover:text-neutral-200 transition-colors"
                     >
-                      + (123) 1800-234-5678
+                      +971-2-506-7345
                     </a>
                   </div>
                 </div>
@@ -156,9 +159,7 @@ const Footer = () => {
                     Our Location
                   </h4>
                   <address className="text-white text-base font-normal font-manrope leading-7 not-italic">
-                    USA, New York – 1060
-                    <br />
-                    Str. First Avenue 1
+                    Al Sajaa Industrial, <br /> Al Sajaah, Sharjah, UAE
                   </address>
                 </div>
 
@@ -168,10 +169,10 @@ const Footer = () => {
                     Email
                   </h4>
                   <a
-                    href="mailto:logico@mail.co"
+                    href="mailto:operations@safefastex.com"
                     className="block text-white text-base font-normal font-manrope underline leading-7 hover:text-neutral-200 transition-colors"
                   >
-                    logico@mail.co
+                    operations@safefastex.com
                   </a>
                 </div>
 
@@ -288,7 +289,10 @@ const Footer = () => {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12"
           >
             {/* Logo and Since */}
-            <motion.div variants={itemVariants} className="lg:col-span-2 space-y-6">
+            <motion.div
+              variants={itemVariants}
+              className="lg:col-span-2 space-y-6"
+            >
               {/* Logo placeholder - replace with actual logo */}
               <Image src={Logo} alt="Logico" className="w-[300px]  h-auto" />
 
@@ -322,63 +326,63 @@ const Footer = () => {
 
               {/* Since 2000 */}
               <div className="text-6xl sm:text-7xl font-bold font-manrope leading-tight text-transparent bg-gradient-to-r from-[#39C0C8] to-[#118991] bg-clip-text">
-                since 2000
+                Since 2000
               </div>
             </motion.div>
 
-            {/* Company */}
+            {/* Quick Links */}
             <motion.div variants={itemVariants} className="space-y-4">
               <h3 className="text-white text-xl font-semibold font-manrope leading-loose">
-                Company
+                Quick Links
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    About
-                  </a>
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/about"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Expertise
-                  </a>
+                    About Us
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/services"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Sustainability
-                  </a>
+                    Services
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/blog"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    News & Media
-                  </a>
+                    Blog
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/contact"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Case Studies
-                  </a>
+                    Contact Us
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/request-quote"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Contacts
-                  </a>
+                    Request a Quote
+                  </Link>
                 </li>
               </ul>
             </motion.div>
@@ -390,109 +394,109 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a
+                  <Link
                     href="/services/air-freight"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Air Freight
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/services/ship-freight"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
                     Sea Freight
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/services/road-freight"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Land Transport
-                  </a>
+                    Road Freight
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/services/train-freight"
+                  <Link
+                    href="/services/customs-clearance"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Groupage
-                  </a>
+                    Customs Clearance
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/services/cold-chain"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Consultancy
-                  </a>
+                    Cold Chain
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/services/door-to-door"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Value Added Services
-                  </a>
+                    Door-to-Door
+                  </Link>
                 </li>
               </ul>
             </motion.div>
 
-            {/* Menu */}
+            {/* Resources */}
             <motion.div variants={itemVariants} className="space-y-4">
               <h3 className="text-white text-xl font-semibold font-manrope leading-loose">
-                Menu
+                Resources
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    href="/blog"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Home pages
-                  </a>
+                    Latest Articles
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/request-quote"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Pages
-                  </a>
+                    Get a Quote
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/contact"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Shop
-                  </a>
+                    Support
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/services/project-cargo"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Blog
-                  </a>
+                    Project Solutions
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/services/cold-chain"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Team
-                  </a>
+                    Pharma Logistics
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/services/warehousing-storage"
                     className="text-white text-base font-normal font-manrope leading-loose hover:text-neutral-200 transition-colors"
                   >
-                    Location
-                  </a>
+                    Storage Facilities
+                  </Link>
                 </li>
               </ul>
             </motion.div>
@@ -508,7 +512,7 @@ const Footer = () => {
           >
             <div className="flex items-center gap-2 text-stone-300 text-sm font-normal font-manrope leading-loose">
               <span>©</span>
-              2025
+              {year}
               <Link
                 href="/"
                 className="underline hover:text-white transition-colors"
@@ -519,14 +523,24 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center gap-4 text-stone-300 text-sm font-normal font-manrope leading-loose">
-              <span>Terms of use</span>
-              <a
-                href="#"
+              <Link
+                href="/terms"
+                className="underline hover:text-white transition-colors"
+              >
+                Terms of Use
+              </Link>
+              <Link
+                href="/privacy"
                 className="underline hover:text-white transition-colors"
               >
                 Privacy
-              </a>
-              <span>Environmental Policy</span>
+              </Link>
+              <Link
+                href="/environmental-policy"
+                className="underline hover:text-white transition-colors"
+              >
+                Environmental Policy
+              </Link>
             </div>
           </motion.div>
         </div>

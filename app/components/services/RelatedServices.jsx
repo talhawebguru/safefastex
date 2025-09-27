@@ -37,13 +37,13 @@ const RelatedServices = ({ related }) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.55, ease: "easeOut", delay: i * 0.08 }}
-              className="group relative bg-white rounded-2xl p-6 border border-gray-200 hover:border-gray-900 transition-colors shadow-sm"
+              className="group relative bg-white rounded-2xl p-6 border border-gray-200 hover:border-[#39C0C8] transition-colors shadow-sm"
             >
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-semibold text-gray-900 group-hover:text-gray-900">
                   {r.title}
                 </h3>
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#39C0C8] text-gray-900">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#39C0C8]/15 text-gray-900 group-hover:bg-[#39C0C8] transition-colors ring-1 ring-[#39C0C8]/40">
                   <FiArrowUpRight className="h-5 w-5" />
                 </span>
               </div>
