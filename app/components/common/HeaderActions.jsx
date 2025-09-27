@@ -24,10 +24,10 @@ const HeaderActions = ({ onMobileMenuToggle }) => {
       <div className="flex lg:hidden items-center">
         <button
           onClick={onMobileMenuToggle}
-          className="p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
+          className="p-2 rounded-full hover:bg-[#39C0C8]/10 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#39C0C8]/50"
           aria-label="Open Menu"
         >
-          <FiMenu className="w-5 h-5 text-gray-600" />
+          <FiMenu className="w-5 h-5 text-[#39C0C8]" />
         </button>
       </div>
     </div>

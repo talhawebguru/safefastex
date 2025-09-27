@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'motion/react'
 import { FiChevronDown } from 'react-icons/fi'
+import { usePathname } from 'next/navigation'
 
 const navigationItems = [
   { label: 'Home', href: '/', hasDropdown: false },
@@ -25,6 +26,7 @@ const navigationItems = [
 
 const Navigation = () => {
   const [hoveredItem, setHoveredItem] = useState(null)
+  const pathname = usePathname()
 
   return (
     <nav className="hidden lg:flex items-center">
@@ -37,19 +39,38 @@ const Navigation = () => {
           onMouseEnter={() => item.hasDropdown && setHoveredItem(index)}
           onMouseLeave={() => setHoveredItem(null)}
         >
-          <Link
-            href={item.href}
-            className="flex items-center py-2 text-gray-800 hover:text-gray-900 transition-colors duration-200 font-medium"
-          >
-            {item.label}
-            {item.hasDropdown && (
-              <FiChevronDown 
-                className={`ml-1 w-4 h-4 transition-transform duration-200 ${
-                  hoveredItem === index ? 'rotate-180' : ''
+          {(() => {
+            const isServicesParent = item.href === '/services' && pathname.startsWith('/services')
+            const isActive = pathname === item.href || isServicesParent
+            return (
+              <Link
+                href={item.href}
+                className={`flex items-center py-2 relative transition-colors duration-200 font-medium ${
+                  isActive ? 'text-[#39C0C8]' : 'text-gray-800 hover:text-gray-900'
                 }`}
-              />
-            )}
-          </Link>
+              >
+                <span className="relative">
+                  {item.label}
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-underline"
+                      initial={{ scaleX: 0 }}
+                      animate={{ scaleX: 1 }}
+                      transition={{ duration: 0.35, ease: 'easeOut' }}
+                      className="absolute left-0 -bottom-1 h-[3px] w-full origin-left bg-[#39C0C8] rounded-full"
+                    />
+                  )}
+                </span>
+                {item.hasDropdown && (
+                  <FiChevronDown 
+                    className={`ml-1 w-4 h-4 transition-transform duration-200 ${
+                      hoveredItem === index ? 'rotate-180' : ''
+                    }`}
+                  />
+                )}
+              </Link>
+            )
+          })()}
 
           {/* Dropdown Menu */}
           <AnimatePresence>

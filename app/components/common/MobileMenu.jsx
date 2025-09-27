@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'motion/react'
 import { FiX, FiChevronDown } from 'react-icons/fi'
+import { usePathname } from 'next/navigation'
 
 const mobileNavigationItems = [
   { label: 'Home', href: '/', hasSubmenu: false },
@@ -24,6 +25,7 @@ const mobileNavigationItems = [
 
 const MobileMenu = ({ isOpen, onClose }) => {
   const [expandedItem, setExpandedItem] = useState(null)
+  const pathname = usePathname()
 
   const toggleSubmenu = (index) => {
     setExpandedItem(expandedItem === index ? null : index)
@@ -71,13 +73,32 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 {mobileNavigationItems.map((item, index) => (
                   <div key={index} className="border-b border-gray-100 last:border-b-0">
                     <div className="flex items-center justify-between px-6 py-4">
-                      <Link
-                        href={item.href}
-                        onClick={handleLinkClick}
-                        className="text-gray-800 hover:text-blue-600 transition-colors duration-200 font-medium flex-1"
-                      >
-                        {item.label}
-                      </Link>
+                      {(() => {
+                        const isServicesParent = item.href === '/services' && pathname.startsWith('/services')
+                        const isActive = pathname === item.href || isServicesParent
+                        return (
+                          <Link
+                            href={item.href}
+                            onClick={handleLinkClick}
+                            className={`relative transition-colors duration-200 font-medium flex-1 py-1 ${
+                              isActive ? 'text-[#39C0C8]' : 'text-gray-800 hover:text-gray-900'
+                            }`}
+                          >
+                            <span className="relative inline-block">
+                              {item.label}
+                              {isActive && (
+                                <motion.span
+                                  layoutId="mobile-nav-underline"
+                                  initial={{ scaleX: 0 }}
+                                  animate={{ scaleX: 1 }}
+                                  transition={{ duration: 0.35, ease: 'easeOut' }}
+                                  className="absolute left-0 -bottom-1 h-[3px] w-full origin-left bg-[#39C0C8] rounded-full"
+                                />
+                              )}
+                            </span>
+                          </Link>
+                        )
+                      })()}
                       {item.hasSubmenu && (
                         <button
                           onClick={() => toggleSubmenu(index)}
@@ -107,9 +128,23 @@ const MobileMenu = ({ isOpen, onClose }) => {
                               key={subIndex}
                               href={subItem.href}
                               onClick={handleLinkClick}
-                              className="block px-12 py-3 text-gray-700 hover:text-blue-600 hover:bg-white transition-colors duration-200"
+                              className={`block px-12 py-3 text-sm transition-colors duration-200 relative ${
+                                pathname === subItem.href
+                                  ? 'text-[#39C0C8]'
+                                  : 'text-gray-700 hover:text-gray-900'
+                              }`}
                             >
-                              {subItem.label}
+                              <span className="relative inline-block">
+                                {subItem.label}
+                                {pathname === subItem.href && (
+                                  <motion.span
+                                    layoutId="mobile-sub-underline"
+                                    initial={{ scaleX: 0 }}
+                                    animate={{ scaleX: 1 }}
+                                    transition={{ duration: 0.3, ease: 'easeOut' }}
+                                    className="absolute left-0 -bottom-1 h-[2px] w-full origin-left bg-[#39C0C8] rounded-full" />
+                                )}
+                              </span>
                             </Link>
                           ))}
                         </motion.div>
@@ -124,7 +159,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 <Link
                   href="/contacts"
                   onClick={handleLinkClick}
-                  className="block w-full bg-blue-600 text-white text-center py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
+                  className="block w-full bg-[#39C0C8] text-gray-900 text-center py-3 px-6 rounded-xl font-semibold shadow-sm hover:bg-[#2EA6AD] transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#39C0C8]/60"
                 >
                   Get a quote
                 </Link>
