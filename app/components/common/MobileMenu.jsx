@@ -67,7 +67,8 @@ const MobileMenu = ({ isOpen, onClose }) => {
               <h2 className="text-xl font-semibold text-gray-800">Menu</h2>
               <button
                 onClick={onClose}
-                className="p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
+                aria-label="Close menu"
+                className="p-2 rounded-full hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500"
               >
                 <FiX className="w-6 h-6 text-gray-600" />
               </button>

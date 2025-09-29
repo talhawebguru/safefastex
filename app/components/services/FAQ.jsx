@@ -34,10 +34,11 @@ const FAQ = ({ faqs }) => {
                 <div key={f.q}>
                   <button
                     onClick={() => setOpen(isOpen ? null : i)}
-                    className="w-full flex items-center justify-between py-5 text-left group"
+                    className="w-full flex items-center justify-between py-5 text-left group focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 rounded"
                     aria-expanded={isOpen}
+                    aria-controls={`faq-answer-${i}`}
                   >
-                    <span className="text-sm sm:text-base font-semibold text-gray-900 pr-6">
+                    <span id={`faq-question-${i}`} className="text-sm sm:text-base font-semibold text-gray-900 pr-6">
                       {f.q}
                     </span>
                     <span
@@ -53,6 +54,9 @@ const FAQ = ({ faqs }) => {
                     animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden"
+                    id={`faq-answer-${i}`}
+                    role="region"
+                    aria-labelledby={`faq-question-${i}`}
                   >
                     <div className="pb-6 -mt-1 text-gray-600 text-sm leading-relaxed">
                       {f.a}

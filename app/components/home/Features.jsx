@@ -174,6 +174,9 @@ const Features = () => {
                       }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                       className="overflow-hidden"
+                      id={`feature-content-${index}`}
+                      role="region"
+                      aria-labelledby={`feature-title-${index}`}
                     >
                       <div className="pb-4 sm:pb-6">
                         <h4 className="text-zinc-800 text-sm sm:text-base lg:text-lg font-normal font-manrope leading-relaxed sm:leading-loose">

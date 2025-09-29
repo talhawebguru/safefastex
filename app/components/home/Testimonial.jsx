@@ -185,7 +185,8 @@ const Testimonial = () => {
                           swiperRef.current.swiper.slideTo(index);
                         }
                       }}
-                      className={`w-12 h-1 transition-all duration-300 ${
+                      aria-label={`Go to testimonial ${index + 1}`}
+                      className={`w-12 h-1 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2 ${
                         index === activeIndex
                           ? "border-b-4 border-stone-900"
                           : "border-b-2 border-neutral-300 hover:border-neutral-400"

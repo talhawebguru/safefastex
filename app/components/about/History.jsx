@@ -184,9 +184,15 @@ const History = () => {
               {/* Progress indicators - Show only 3 */}
               <div className="flex items-center space-x-3 ml-4">
                 {[0, 1, 2].map((index) => (
-                  <div
+                  <button
                     key={index}
-                    className={`w-8 sm:w-10 lg:w-12 h-1 transition-all duration-300 ${
+                    onClick={() => {
+                      if (swiperRef.current?.swiper) {
+                        swiperRef.current.swiper.slideTo(index);
+                      }
+                    }}
+                    aria-label={`Go to slide ${index + 1}`}
+                    className={`w-8 sm:w-10 lg:w-12 h-1 transition-all duration-300 hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2 ${
                       index === activeIndex
                         ? 'border-b-4 border-stone-900'
                         : 'border-b-2 border-neutral-300'

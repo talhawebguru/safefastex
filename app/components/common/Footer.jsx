@@ -183,26 +183,38 @@ const Footer = () => {
                   </h4>
                   <div className="flex items-center gap-6">
                     <a
-                      href="#"
-                      className="text-white hover:text-neutral-200 transition-colors"
+                      href="https://facebook.com/safefastex"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Follow SafeFastEx on Facebook"
+                      className="text-white hover:text-neutral-200 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
                     >
                       <FaFacebookF className="w-4 h-4" />
                     </a>
                     <a
-                      href="#"
-                      className="text-white hover:text-neutral-200 transition-colors"
+                      href="https://twitter.com/safefastex"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Follow SafeFastEx on Twitter"
+                      className="text-white hover:text-neutral-200 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
                     >
                       <FaTwitter className="w-4 h-4" />
                     </a>
                     <a
-                      href="#"
-                      className="text-white hover:text-neutral-200 transition-colors"
+                      href="https://linkedin.com/company/safefastex"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Follow SafeFastEx on LinkedIn"
+                      className="text-white hover:text-neutral-200 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
                     >
                       <FaLinkedinIn className="w-4 h-4" />
                     </a>
                     <a
-                      href="#"
-                      className="text-white hover:text-neutral-200 transition-colors"
+                      href="https://youtube.com/safefastex"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Subscribe to SafeFastEx on YouTube"
+                      className="text-white hover:text-neutral-200 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
                     >
                       <FaYoutube className="w-4 h-4" />
                     </a>
@@ -299,26 +311,38 @@ const Footer = () => {
               {/* Social Icons */}
               <div className="flex items-center gap-6">
                 <a
-                  href="#"
-                  className="text-white hover:text-neutral-200 transition-colors"
+                  href="https://facebook.com/safefastex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow SafeFastEx on Facebook"
+                  className="text-white hover:text-neutral-200 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
                 >
                   <FaFacebookF className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
-                  className="text-white hover:text-neutral-200 transition-colors"
+                  href="https://twitter.com/safefastex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow SafeFastEx on Twitter"
+                  className="text-white hover:text-neutral-200 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
                 >
                   <FaTwitter className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
-                  className="text-white hover:text-neutral-200 transition-colors"
+                  href="https://linkedin.com/company/safefastex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow SafeFastEx on LinkedIn"
+                  className="text-white hover:text-neutral-200 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
                 >
                   <FaLinkedinIn className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
-                  className="text-white hover:text-neutral-200 transition-colors"
+                  href="https://youtube.com/safefastex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Subscribe to SafeFastEx on YouTube"
+                  className="text-white hover:text-neutral-200 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
                 >
                   <FaYoutube className="w-4 h-4" />
                 </a>

@@ -145,11 +145,16 @@ const RequestQuote = () => {
                 {/* Row 4: Freight Type & Incoterms */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                   <div className="relative">
+                    <label htmlFor="freightType" className="sr-only">
+                      Freight Type
+                    </label>
                     <select
+                      id="freightType"
                       name="freightType"
                       value={formData.freightType}
                       onChange={handleInputChange}
-                      className="w-full h-11 sm:h-12 px-3 sm:px-4 border border-gray-900 rounded-lg text-sm text-gray-900 bg-white focus:border-gray-900 focus:outline-none transition-colors appearance-none cursor-pointer"
+                      aria-label="Select freight type"
+                      className="w-full h-11 sm:h-12 px-3 sm:px-4 border border-gray-900 rounded-lg text-sm text-gray-900 bg-white focus:border-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 transition-colors appearance-none cursor-pointer"
                     >
                       <option value="Truck Freight">Truck Freight</option>
                       <option value="Ship Freight">Ship Freight</option>
@@ -161,11 +166,16 @@ const RequestQuote = () => {
                     </div>
                   </div>
                   <div className="relative">
+                    <label htmlFor="incoterms" className="sr-only">
+                      Incoterms
+                    </label>
                     <select
+                      id="incoterms"
                       name="incoterms"
                       value={formData.incoterms}
                       onChange={handleInputChange}
-                      className="w-full h-11 sm:h-12 px-3 sm:px-4 border border-gray-900 rounded-lg text-sm text-gray-900 bg-white focus:border-gray-900 focus:outline-none transition-colors appearance-none cursor-pointer"
+                      aria-label="Select incoterms"
+                      className="w-full h-11 sm:h-12 px-3 sm:px-4 border border-gray-900 rounded-lg text-sm text-gray-900 bg-white focus:border-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 transition-colors appearance-none cursor-pointer"
                     >
                       <option value="EXW">EXW</option>
                       <option value="FOB">FOB</option>

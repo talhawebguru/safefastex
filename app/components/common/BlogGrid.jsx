@@ -311,7 +311,8 @@ const BlogGrid = ({
               <button
                 onClick={() => handlePageChange(currentPage - 1)}
                 disabled={currentPage === 1}
-                className={`flex items-center justify-center w-12 h-12 rounded-2xl border-2 transition-colors ${
+                aria-label="Go to previous page"
+                className={`flex items-center justify-center w-12 h-12 rounded-2xl border-2 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 ${
                   currentPage === 1
                     ? "border-gray-200 text-gray-400 cursor-not-allowed"
                     : "border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white"
@@ -327,7 +328,9 @@ const BlogGrid = ({
                   <button
                     key={pageNumber}
                     onClick={() => handlePageChange(pageNumber)}
-                    className={`flex items-center justify-center w-12 h-12 rounded-2xl border-2 font-semibold font-manrope transition-colors ${
+                    aria-label={`Go to page ${pageNumber}`}
+                    aria-current={currentPage === pageNumber ? "page" : undefined}
+                    className={`flex items-center justify-center w-12 h-12 rounded-2xl border-2 font-semibold font-manrope transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 ${
                       currentPage === pageNumber
                         ? "border-gray-900 bg-gray-900 text-white"
                         : "border-gray-200 text-gray-900 hover:border-gray-900"
@@ -342,7 +345,8 @@ const BlogGrid = ({
               <button
                 onClick={() => handlePageChange(currentPage + 1)}
                 disabled={currentPage === totalPages}
-                className={`flex items-center justify-center w-12 h-12 rounded-2xl border-2 transition-colors ${
+                aria-label="Go to next page"
+                className={`flex items-center justify-center w-12 h-12 rounded-2xl border-2 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 ${
                   currentPage === totalPages
                     ? "border-gray-200 text-gray-400 cursor-not-allowed"
                     : "border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white"
