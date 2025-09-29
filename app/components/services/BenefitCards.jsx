@@ -53,9 +53,9 @@ const BenefitCards = ({ benefits }) => {
               <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-gray-900">
                 {b.title}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <h4 className="text-sm text-gray-600 leading-relaxed">
                 {b.description}
-              </p>
+              </h4>
             </motion.div>
           ))}
         </div>

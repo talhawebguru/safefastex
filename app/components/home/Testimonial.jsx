@@ -93,7 +93,7 @@ const Testimonial = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-          className="text-3xl text-center text-brand font-spaceGrotesk sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-gray-900 leading-tight mb-10"
+          className="text-3xl text-center text-brand font-spaceGrotesk sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight mb-10"
         >
           What Our Clients Say
         </motion.h2>
@@ -141,11 +141,11 @@ const Testimonial = () => {
                       className="space-y-6 sm:space-y-8"
                     >
                       {/* Quote Text */}
-                      <div className="space-y-6">
+                      <h3 className="space-y-6">
                         <blockquote className="text-zinc-800 text-lg sm:text-xl font-normal font-manrope leading-8 sm:leading-10">
                           “{testimonial.quote}”
                         </blockquote>
-                      </div>
+                      </h3>
                       {/* Author Info */}
                       <div className="space-y-1">
                         <div className="text-zinc-800 text-base font-bold font-manrope leading-tight">

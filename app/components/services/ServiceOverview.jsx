@@ -8,7 +8,7 @@ const ServiceOverview = ({ title, tagline, intro }) => {
     <section className="py-10 sm:py-14 lg:py-20 bg-white">
       <Container>
         <div className="max-w-4xl">
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -16,8 +16,8 @@ const ServiceOverview = ({ title, tagline, intro }) => {
             className="text-3xl sm:text-4xl lg:text-5xl font-spaceGrotesk font-semibold leading-tight text-gray-900 uppercase"
           >
             {title}
-          </motion.h1>
-          <motion.p
+          </motion.h2>
+          <motion.h3
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -25,8 +25,8 @@ const ServiceOverview = ({ title, tagline, intro }) => {
             className="mt-4 text-lg sm:text-xl text-[#39C0C8] font-medium"
           >
             {tagline}
-          </motion.p>
-          <motion.p
+          </motion.h3>
+          <motion.h4
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -34,7 +34,7 @@ const ServiceOverview = ({ title, tagline, intro }) => {
             className="mt-6 text-gray-700 text-base sm:text-lg leading-relaxed"
           >
             {intro}
-          </motion.p>
+          </motion.h4>
         </div>
       </Container>
     </section>

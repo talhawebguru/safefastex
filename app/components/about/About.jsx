@@ -92,9 +92,9 @@ const About = () => {
           >
             {/* Large Numbers */}
             <div className="flex-1 text-center lg:text-left">
-              <motion.h2 className="text-wrap text-6xl sm:text-[120px] md:text-[140px] lg:text-[160px] xl:text-[180px] 2xl:text-[200px] font-semibold font-manrope leading-[0.85] text-transparent bg-clip-text bg-gradient-to-r from-[#39C0C8] via-[#2EA6AD] to-[#118991] tracking-[-0.04em] select-none">
+              <motion.p className="text-wrap text-6xl sm:text-[120px] md:text-[140px] lg:text-[160px] xl:text-[180px] 2xl:text-[200px] font-semibold font-manrope leading-[0.85] text-transparent bg-clip-text bg-gradient-to-r from-[#39C0C8] via-[#2EA6AD] to-[#118991] tracking-[-0.04em] select-none">
                 {displayValue}
-              </motion.h2>
+              </motion.p>
             </div>
 
             {/* Descriptive Text - Responsive Layout */}
@@ -127,12 +127,9 @@ const About = () => {
             {/* Left Column - Main Heading */}
             <div className="lg:col-span-7 xl:col-span-6">
               <motion.div variants={headingVariants}>
-                <h1 className="text-neutral-900 text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-medium font-['Space_Grotesk'] uppercase leading-[1.1] tracking-[-0.02em] space-y-1">
+                <h2 className="text-neutral-900 text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-medium font-['Space_Grotesk'] uppercase leading-[1.1] tracking-[-0.02em] space-y-1">
                   <span className="block">About US</span>
-                  {/* <span className="block">Transportation</span>
-                  <span className="block">company in our</span>
-                  <span className="block">state</span> */}
-                </h1>
+                </h2>
               </motion.div>
             </div>
 
@@ -143,14 +140,14 @@ const About = () => {
                 className="space-y-6 sm:space-y-7 lg:space-y-8"
               >
                 {/* First Paragraph - Bold */}
-                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-bold font-manrope leading-relaxed">
+                <h3 className="text-zinc-800 text-base sm:text-lg xl:text-xl font-bold font-manrope leading-relaxed">
                   SafeFastEx is a leading logistics and freight forwarding company based in Sharjah, UAE, delivering reliable global supply chain solutions since 2000. With expertise in air, sea, and road freight, customs clearance, warehousing, and cold chain logistics, we help businesses move goods with speed, security, and confidence.
-                </p>
+                </h3>
 
                 {/* Second Paragraph - Regular */}
-                <p className="text-zinc-800 text-base sm:text-lg xl:text-xl font-normal font-manrope leading-relaxed">
+                <h4 className="text-zinc-800 text-base sm:text-lg xl:text-xl font-normal font-manrope leading-relaxed">
                   Our goal is simple: to connect businesses and markets with seamless logistics, powered by transparency, technology, and 24/7 customer support.
-                </p>
+                </h4>
               </motion.div>
             </div>
           </div>
