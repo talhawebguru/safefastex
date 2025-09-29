@@ -5,7 +5,7 @@ import Container from "../common/Container";
 
 const StatsBar = ({ stats }) => {
   return (
-    <section className="py-10 sm:py-14 lg:py-20 bg-gray-900 text-white">
+    <section className="py-10 sm:py-14 lg:py-20 bg-brand text-white">
       <Container>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {stats.map((s, i) => (
@@ -20,7 +20,7 @@ const StatsBar = ({ stats }) => {
               <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold font-spaceGrotesk mb-2">
                 {s.value}
               </div>
-              <div className="text-xs sm:text-sm text-white/70 tracking-wide uppercase">
+              <div className="text-xs sm:text-sm text-gray-900 tracking-wide uppercase">
                 {s.label}
               </div>
             </motion.div>

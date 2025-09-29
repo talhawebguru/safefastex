@@ -42,7 +42,7 @@ const NameBanner = ({
   };
 
   return (
-    <section className="py-8 sm:py-12 lg:py-16 xl:py-20 overflow-x-hidden">
+    <section className="py-10 sm:py-14 lg:py-20 overflow-x-hidden">
       <Container>
         <motion.div
           variants={containerVariants}
