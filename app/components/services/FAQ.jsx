@@ -58,7 +58,7 @@ const FAQ = ({ faqs }) => {
                     role="region"
                     aria-labelledby={`faq-question-${i}`}
                   >
-                    <div className="pb-6 -mt-1 text-gray-600 text-sm leading-relaxed">
+                    <div className="pb-6 pt-3 text-gray-600 text-sm leading-relaxed">
                       {f.a}
                     </div>
                   </motion.div>
