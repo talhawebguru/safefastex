@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="pt-4 lg:pt-8 overflow-x-hidden">
       <Container>
-        <div className="relative overflow-hidden rounded-[28px] lg:rounded-[32px] min-h-[520px] lg:min-h-[640px] 2xl:min-h-[720px]">
+        <div className="relative overflow-hidden rounded-[28px] lg:rounded-[32px] min-h-[520px] lg:h-[calc(100vh-140px)]">
           {/* Background video */}
           <video
             className="absolute inset-0 h-full w-full object-cover"

@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react'
-import Link from 'next/link'
-import { motion } from 'motion/react'
-import { FiSearch, FiUser, FiShoppingCart, FiMenu } from 'react-icons/fi'
+import React, { useState } from "react";
+import Link from "next/link";
+import { motion } from "motion/react";
+import { FiMenu, FiArrowUpRight } from "react-icons/fi";
 
 const HeaderActions = ({ onMobileMenuToggle }) => {
   // Only Get a quote and mobile menu
@@ -11,14 +11,28 @@ const HeaderActions = ({ onMobileMenuToggle }) => {
   return (
     <div className="flex items-center space-x-4">
       {/* Desktop: Only Get a Quote Button */}
-      <div className="hidden lg:flex items-center">
+      <motion.div
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, ease: "easeOut", delay: 0.2 }}
+        className=""
+      >
         <Link
-          href="/contacts"
-          className="px-6 py-3 rounded-2xl bg-[#39C0C8] text-gray-900 font-semibold shadow-sm hover:bg-[#2EA6AD] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#39C0C8]/60"
+          href="/request-quote"
+          className="group relative inline-flex items-center rounded-2xl border border-[#39C0C8] text-gray-900 pl-6 pr-1 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#39C0C8]/60"
         >
-          Get a quote
+          <span
+            aria-hidden
+            className="pointer-events-none absolute inset-y-0 left-0 w-0 bg-[#39C0C8] transition-[width] duration-300 ease-out group-hover:w-full rounded-2xl"
+          />
+          <span className="relative z-10 font-semibold group-hover:text-black">
+            Get a Quote
+          </span>
+          <span className="relative z-10 ml-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#39C0C8] text-gray-900">
+            <FiArrowUpRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]" />
+          </span>
         </Link>
-      </div>
+      </motion.div>
 
       {/* Mobile: Only Mobile Menu Trigger */}
       <div className="flex lg:hidden items-center">
@@ -31,7 +45,7 @@ const HeaderActions = ({ onMobileMenuToggle }) => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeaderActions
+export default HeaderActions;

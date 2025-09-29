@@ -3,6 +3,7 @@ import NameBanner from "../components/about/NameBanner";
 import GetInTouch from "../components/common/GetInTouch";
 import Map from "../components/contact/Map";
 import Container from "../components/common/Container";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export const metadata = {
   title: "Contact SafeFastEx | Get Shipping Quote & Expert Logistics Support",
@@ -279,28 +280,40 @@ const page = () => {
                     </h5>
                     <div className="flex space-x-4">
                       <a 
-                        href="#" 
-                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-[#39C0C8] hover:text-neutral-900 transition-colors"
+                        href="https://facebook.com/safefastex" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center text-white hover:bg-[#1877F2] transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+                        aria-label="Follow us on Facebook"
                       >
-                        f
+                        <FaFacebookF className="text-lg group-hover:scale-110 transition-transform duration-300" />
                       </a>
                       <a 
-                        href="#" 
-                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-[#39C0C8] hover:text-neutral-900 transition-colors"
+                        href="https://twitter.com/safefastex" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center text-white hover:bg-[#1DA1F2] transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+                        aria-label="Follow us on Twitter"
                       >
-                        t
+                        <FaTwitter className="text-lg group-hover:scale-110 transition-transform duration-300" />
                       </a>
                       <a 
-                        href="#" 
-                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-[#39C0C8] hover:text-neutral-900 transition-colors"
+                        href="https://linkedin.com/company/safefastex" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center text-white hover:bg-[#0A66C2] transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+                        aria-label="Connect with us on LinkedIn"
                       >
-                        in
+                        <FaLinkedinIn className="text-lg group-hover:scale-110 transition-transform duration-300" />
                       </a>
                       <a 
-                        href="#" 
-                        className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center text-white hover:bg-[#39C0C8] hover:text-neutral-900 transition-colors"
+                        href="https://instagram.com/safefastex" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center text-white hover:bg-gradient-to-r hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#F77737] transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+                        aria-label="Follow us on Instagram"
                       >
-                        ig
+                        <FaInstagram className="text-lg group-hover:scale-110 transition-transform duration-300" />
                       </a>
                     </div>
                   </div>

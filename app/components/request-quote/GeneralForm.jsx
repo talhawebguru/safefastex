@@ -531,9 +531,28 @@ const GeneralForm = () => {
                   How we can help you?
                 </h3>
                 <p className="text-zinc-800 text-lg font-normal font-manrope leading-loose mb-4">
-                  Triggerfish bluntnose knifefish upside-down catfish cobia
-                  spookfish convict cichlid.
+                  Need assistance with your shipping requirements? Our logistics experts are here to help you find the best freight solutions for your business needs.
                 </p>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-neutral-900 rounded-full mt-3 flex-shrink-0"></div>
+                    <p className="text-zinc-800 text-base font-normal font-manrope leading-relaxed">
+                      Custom shipping solutions tailored to your requirements
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-neutral-900 rounded-full mt-3 flex-shrink-0"></div>
+                    <p className="text-zinc-800 text-base font-normal font-manrope leading-relaxed">
+                      24/7 customer support for all your logistics queries
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-neutral-900 rounded-full mt-3 flex-shrink-0"></div>
+                    <p className="text-zinc-800 text-base font-normal font-manrope leading-relaxed">
+                      Competitive pricing with transparent cost breakdown
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <motion.div
